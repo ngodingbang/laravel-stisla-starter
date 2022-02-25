@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Laravel x Stisla'),
+
+    'shortname' => env('APP_SHORTNAME', 'LS'),
 
     /*
     |--------------------------------------------------------------------------
