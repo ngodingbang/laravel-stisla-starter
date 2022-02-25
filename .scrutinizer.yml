@@ -1,8 +1,6 @@
 build:
   nodes:
     analysis:
-      environment:
-        node: '16.14.0'
       dependencies:
         before:
           - npm install
