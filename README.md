@@ -23,7 +23,7 @@ This application has been tested using [pestphp](https://pestphp.com).
 - Composer ^2.0
 - MySQL ^8.0.28
 
-## Instalasi
+## Installation
 
 To install this repository in your localhost, run this command below using your terminal.
 
@@ -38,6 +38,13 @@ Run this command below to run database migration process.
 
 ```bash
 php artisan migrate
+```
+
+## Publish Assets
+Run this command below to publish the neccessary assets into "public" folder.
+
+```bash
+npm install && npm run dev
 ```
 
 ## Testing
