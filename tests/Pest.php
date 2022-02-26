@@ -39,7 +39,53 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something()
+/**
+ * Create user data from factory with "admin" role and specified company.
+ *
+ * @param  string  $role
+ * @return \App\Models\User
+ */
+function pest_create_user(string $role): App\Models\User
 {
-    // ..
+    return App\Models\User::factory()
+        ->verified()
+        ->create()
+        ->syncRoles($role);
+}
+
+/**
+ * Create user data from factory with "manager" role.
+ *
+ * @return \App\Models\User
+ */
+function pest_create_manager(): App\Models\User
+{
+    return pest_create_user(App\Models\Role::ROLE_MANAGER);
+}
+
+/**
+ * Create user data from factory with random role.
+ *
+ * @return \App\Models\User
+ */
+function pest_create_random_user(): App\Models\User
+{
+    return pest_create_user(Illuminate\Support\Arr::random([
+        App\Models\Role::ROLE_ADMIN,
+        App\Models\Role::ROLE_MANAGER,
+        App\Models\Role::ROLE_STAFF,
+    ]));
+}
+
+/**
+ * Create user data from factory with manager or staff role.
+ *
+ * @return \App\Models\User
+ */
+function pest_create_random_manager_or_staff(): App\Models\User
+{
+    return pest_create_user(Illuminate\Support\Arr::random([
+        App\Models\Role::ROLE_MANAGER,
+        App\Models\Role::ROLE_STAFF,
+    ]));
 }
