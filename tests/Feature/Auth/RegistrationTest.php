@@ -3,7 +3,6 @@
 namespace Tests\Feature\Auth;
 
 use App\Infrastructure\Auth\Notifications\VerifyEmailQueued;
-use App\Models\Company;
 use App\Models\User;
 use Illuminate\Support\Facades\Notification;
 use Tests\TestCase;

@@ -40,7 +40,7 @@ expect()->extend('toBeOne', function () {
 */
 
 /**
- * Create user data from factory with "admin" role and specified company.
+ * Create user data from factory with specified role.
  *
  * @param  string  $role
  * @return \App\Models\User
