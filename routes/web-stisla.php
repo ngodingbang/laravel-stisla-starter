@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth', 'verified')->group(function () {
-    Route::view('/dashboard', 'dashboard.index')->name('dashboard.index');
+    Route::view('/dashboard-general', 'dashboard.general')->name('dashboard.general');
+    Route::view('/dashboard-ecommerce', 'dashboard.ecommerce')->name('dashboard.ecommerce');
 
     Route::prefix('/profile')->name('profile.')->controller(ProfileController::class)->group(function () {
         Route::get('/', 'edit')->name('edit');

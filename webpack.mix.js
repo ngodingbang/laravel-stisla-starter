@@ -28,6 +28,7 @@ mix.sass('resources/scss/stisla/style.scss', 'public/css/stisla');
 mix.sass('resources/scss/stisla/components.scss', 'public/css/stisla');
 
 mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts');
+mix.copy('node_modules/summernote/dist/font', 'public/node_modules/summernote/dist/font');
 
 mix.combine([
   'node_modules/jquery/dist/jquery.min.js',
@@ -56,6 +57,8 @@ mix.combine('node_modules/select2/dist/css/select2.min.css', 'public/node_module
 mix.combine('node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css', 'public/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css');
 mix.combine('node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css', 'public/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css');
 mix.combine('node_modules/bootstrap-daterangepicker/daterangepicker.css', 'public/node_modules/bootstrap-daterangepicker/daterangepicker.css');
+mix.combine('node_modules/summernote/dist/summernote-bs4.css', 'public/node_modules/summernote/dist/summernote-bs4.css');
+mix.combine('node_modules/bootstrap-social/bootstrap-social.css', 'public/node_modules/bootstrap-social/bootstrap-social.css');
 
 mix.combine('node_modules/select2/dist/js/select2.full.min.js', 'public/node_modules/select2/dist/js/select2.full.min.js');
 mix.combine('node_modules/datatables/media/js/jquery.dataTables.min.js', 'public/node_modules/datatables/media/js/jquery.dataTables.min.js');
@@ -63,3 +66,4 @@ mix.combine('node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js', '
 mix.combine('node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js', 'public/node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js');
 mix.combine('node_modules/datatables.net-plugins/i18n/id.json', 'public/node_modules/datatables.net-plugins/i18n/id.json');
 mix.combine('node_modules/bootstrap-daterangepicker/daterangepicker.js', 'public/node_modules/bootstrap-daterangepicker/daterangepicker.js');
+mix.combine('node_modules/summernote/dist/summernote-bs4.js', 'public/node_modules/summernote/dist/summernote-bs4.js');

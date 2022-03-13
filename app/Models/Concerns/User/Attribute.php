@@ -3,6 +3,7 @@
 namespace App\Models\Concerns\User;
 
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\HtmlString;
 
 /**
  * @property string $username
@@ -10,6 +11,8 @@ use Illuminate\Support\Facades\Hash;
  * @property string $email
  * @property \Illuminate\Support\Carbon $email_verified_at
  * @property string $password
+ * @property \Illuminate\Support\HtmlString $bio
+ * @property bool $is_subscribe_to_newsletter
  * @property-read string $remember_token
  * @property-read string $role
  * @property-read string $profile_image
@@ -29,6 +32,17 @@ trait Attribute
         $this->attributes['password'] = Hash::make($value);
 
         return $this;
+    }
+
+    /**
+     * Return "bio" attribute value.
+     *
+     * @param  string|null  $value
+     * @return \Illuminate\Support\HtmlString
+     */
+    public function getBioAttribute(?string $value): HtmlString
+    {
+        return new HtmlString($value ?? '');
     }
 
     /**

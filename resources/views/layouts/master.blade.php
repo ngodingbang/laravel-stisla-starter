@@ -33,6 +33,7 @@
 
     {{-- Script --}}
     <script src="{{ mix('js/stisla/master.js') }}"></script>
+    @yield('pre-script')
     <script src="{{ mix('js/stisla/app.js') }}"></script>
     <script src="{{ mix('js/stisla/scripts.js') }}"></script>
     @yield('script')

@@ -7,7 +7,7 @@
 
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item">
-                    <a href="{{ route('dashboard.index') }}">
+                    <a href="{{ route('dashboard.ecommerce') }}">
                         <i class="fas @lang('icon.dashboard')"></i> <span>@lang('menu.dashboard')</span>
                     </a>
                 </div>

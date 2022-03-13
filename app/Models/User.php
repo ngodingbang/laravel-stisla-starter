@@ -31,6 +31,8 @@ class User extends Authenticatable implements HasRole, MustVerifyEmail
         'name',
         'email',
         'password',
+        'bio',
+        'is_subscribe_to_newsletter',
     ];
 
     /**
@@ -50,6 +52,7 @@ class User extends Authenticatable implements HasRole, MustVerifyEmail
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'is_subscribe_to_newsletter' => 'boolean',
     ];
 
     /**

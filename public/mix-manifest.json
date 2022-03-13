@@ -17,6 +17,11 @@
     "/webfonts/fa-solid-900.ttf": "/webfonts/fa-solid-900.ttf",
     "/webfonts/fa-solid-900.woff": "/webfonts/fa-solid-900.woff",
     "/webfonts/fa-solid-900.woff2": "/webfonts/fa-solid-900.woff2",
+    "/node_modules/summernote/dist/font/summernote.eot": "/node_modules/summernote/dist/font/summernote.eot",
+    "/node_modules/summernote/dist/font/summernote.hash": "/node_modules/summernote/dist/font/summernote.hash",
+    "/node_modules/summernote/dist/font/summernote.ttf": "/node_modules/summernote/dist/font/summernote.ttf",
+    "/node_modules/summernote/dist/font/summernote.woff": "/node_modules/summernote/dist/font/summernote.woff",
+    "/node_modules/summernote/dist/font/summernote.woff2": "/node_modules/summernote/dist/font/summernote.woff2",
     "/js/stisla/master.js": "/js/stisla/master.js",
     "/js/stisla/app.js": "/js/stisla/app.js",
     "/js/stisla/scripts.js": "/js/stisla/scripts.js",
@@ -29,10 +34,13 @@
     "/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css": "/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css",
     "/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css": "/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css",
     "/node_modules/bootstrap-daterangepicker/daterangepicker.css": "/node_modules/bootstrap-daterangepicker/daterangepicker.css",
+    "/node_modules/summernote/dist/summernote-bs4.css": "/node_modules/summernote/dist/summernote-bs4.css",
+    "/node_modules/bootstrap-social/bootstrap-social.css": "/node_modules/bootstrap-social/bootstrap-social.css",
     "/node_modules/select2/dist/js/select2.full.min.js": "/node_modules/select2/dist/js/select2.full.min.js",
     "/node_modules/datatables/media/js/jquery.dataTables.min.js": "/node_modules/datatables/media/js/jquery.dataTables.min.js",
     "/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js": "/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js",
     "/node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js": "/node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js",
     "/node_modules/datatables.net-plugins/i18n/id.json": "/node_modules/datatables.net-plugins/i18n/id.json",
-    "/node_modules/bootstrap-daterangepicker/daterangepicker.js": "/node_modules/bootstrap-daterangepicker/daterangepicker.js"
+    "/node_modules/bootstrap-daterangepicker/daterangepicker.js": "/node_modules/bootstrap-daterangepicker/daterangepicker.js",
+    "/node_modules/summernote/dist/summernote-bs4.js": "/node_modules/summernote/dist/summernote-bs4.js"
 }

@@ -19,7 +19,7 @@
                         <div class="card-body">
                             <p class="text-muted">@lang('Verification email has been run successfully.')</p>
 
-                            <a href="{{ route('dashboard.index') }}" class="btn btn-primary">@lang('Go to page :page', ['page' => __('Dashboard')])</a>
+                            <a href="{{ route('dashboard.ecommerce') }}" class="btn btn-primary">@lang('Go to page :page', ['page' => __('Dashboard')])</a>
                         </div>
                     </div>
 

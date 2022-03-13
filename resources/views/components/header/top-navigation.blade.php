@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg main-navbar">
-    <a href="{{ route('dashboard.index') }}" class="navbar-brand sidebar-gone-hide">{{ config('app.name') }}</a>
+    <a href="{{ route('dashboard.ecommerce') }}" class="navbar-brand sidebar-gone-hide">{{ config('app.name') }}</a>
 
     <div class="navbar-nav">
         <a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar">
@@ -15,7 +15,7 @@
         <ul class="navbar-nav">
             @can('view-dashboard')
                 <li class="nav-item @if (Route::is('dashboard.*')) active @endif">
-                    <a href="{{ route('dashboard.index') }}" class="nav-link">
+                    <a href="{{ route('dashboard.ecommerce') }}" class="nav-link">
                         <span>@lang('menu.dashboard')</span>
                     </a>
                 </li>
