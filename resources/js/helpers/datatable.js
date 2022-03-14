@@ -1,6 +1,6 @@
 var datatable;
 
-$(document).ready(function () {
+$(function() {
   datatable = $('.datatable').DataTable({
     processing: true,
     serverSide: true,
@@ -13,8 +13,8 @@ $(document).ready(function () {
     },
     columns: datatable_columns,
     order: typeof datatable_order !== 'undefined' ? datatable_order : [],
-    language: {
+    language: typeof datatable_language_url !== 'undefined' ? {
       url: datatable_language_url,
-    },
+    } : {},
   });
 });

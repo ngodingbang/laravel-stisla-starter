@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function() {
   let datatable = $('.datatable').DataTable({
     processing: true,
     serverSide: true,
