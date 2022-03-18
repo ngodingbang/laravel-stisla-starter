@@ -85,9 +85,15 @@ jobs:
           DB_PORT: ${{ job.services.mysql.ports['3306'] }}
 
       - name: Upload scrutinizer coverage
-        uses: sudo-bot/action-scrutinizer@latest
-        with:
-          cli-args: "--format=php-clover build/logs/clover.xml"
+        # https://scrutinizer-ci.com/docs/tools/external-code-coverage/#php
+        run: |
+          wget https://scrutinizer-ci.com/ocular.phar
+          php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
+        # Note: this steps below has been disabled because of the deprecated guzzle/common package issue
+        #
+        # uses: sudo-bot/action-scrutinizer@latest
+        # with:
+        #   cli-args: "--format=php-clover build/logs/clover.xml"
 
       - name: Upload coverage results to coveralls
         env:
