@@ -10,3 +10,5 @@
 .env.github export-ignore
 .scrutinizer.yml export-ignore
 CHANGELOG.md export-ignore
+composer.lock export-ignore
+package-lock.json export-ignore

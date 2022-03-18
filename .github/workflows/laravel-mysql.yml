@@ -55,7 +55,14 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Install composer dependencies
-        run: composer install --no-progress --prefer-dist --optimize-autoloader
+        run: |
+          rm composer.lock
+          composer install --no-progress --prefer-dist --optimize-autoloader
+
+      - name: Install front-end dependencies
+        run: |
+          npm install
+          npm run dev
 
       - name: Prepare the application
         run: |
