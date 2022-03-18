@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\SettingController;
 use App\Models\User;
 use Illuminate\Support\Arr;
 

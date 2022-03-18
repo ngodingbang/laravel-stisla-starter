@@ -12,3 +12,4 @@
 CHANGELOG.md export-ignore
 composer.lock export-ignore
 package-lock.json export-ignore
+Procfile export-ignore
