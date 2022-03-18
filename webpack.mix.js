@@ -29,6 +29,7 @@ mix.sass('resources/scss/stisla/components.scss', 'public/css/stisla');
 
 mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts');
 mix.copy('node_modules/summernote/dist/font', 'public/node_modules/summernote/dist/font');
+mix.copy('node_modules/flag-icon-css/flags', 'public/node_modules/flag-icon-css/flags');
 
 mix.combine([
   'node_modules/jquery/dist/jquery.min.js',
@@ -46,10 +47,11 @@ getFiles('resources/js/helpers').forEach(filename => {
 });
 
 [
-  // put the specified page js files here
+  // put the specified page js directory here
+  'page',
 ].forEach(directory => {
-  getFiles(`resources/js/page/${directory}`).forEach(filename => {
-    mix.copy(`resources/js/page/${directory}/${filename}`, `public/js/page/${directory}`);
+  getFiles(`resources/js/${directory}`).forEach(filename => {
+    mix.copy(`resources/js/${directory}/${filename}`, `public/js/${directory}`);
   });
 });
 
@@ -59,6 +61,12 @@ mix.combine('node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.cs
 mix.combine('node_modules/bootstrap-daterangepicker/daterangepicker.css', 'public/node_modules/bootstrap-daterangepicker/daterangepicker.css');
 mix.combine('node_modules/summernote/dist/summernote-bs4.css', 'public/node_modules/summernote/dist/summernote-bs4.css');
 mix.combine('node_modules/bootstrap-social/bootstrap-social.css', 'public/node_modules/bootstrap-social/bootstrap-social.css');
+mix.combine('node_modules/jqvmap/dist/jqvmap.min.css', 'public/node_modules/jqvmap/dist/jqvmap.min.css');
+mix.combine('node_modules/owl.carousel/dist/assets/owl.carousel.min.css', 'public/node_modules/owl.carousel/dist/assets/owl.carousel.min.css');
+mix.combine('node_modules/owl.carousel/dist/assets/owl.theme.default.min.css', 'public/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css');
+mix.combine('node_modules/chocolat/dist/css/chocolat.css', 'public/node_modules/chocolat/dist/css/chocolat.css');
+mix.combine('node_modules/weathericons/css/weather-icons.min.css', 'public/node_modules/weathericons/css/weather-icons.min.css');
+mix.combine('node_modules/weathericons/css/weather-icons-wind.min.css', 'public/node_modules/weathericons/css/weather-icons-wind.min.css');
 
 mix.combine('node_modules/select2/dist/js/select2.full.min.js', 'public/node_modules/select2/dist/js/select2.full.min.js');
 mix.combine('node_modules/datatables/media/js/jquery.dataTables.min.js', 'public/node_modules/datatables/media/js/jquery.dataTables.min.js');
@@ -67,3 +75,10 @@ mix.combine('node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js'
 mix.combine('node_modules/datatables.net-plugins/i18n/id.json', 'public/node_modules/datatables.net-plugins/i18n/id.json');
 mix.combine('node_modules/bootstrap-daterangepicker/daterangepicker.js', 'public/node_modules/bootstrap-daterangepicker/daterangepicker.js');
 mix.combine('node_modules/summernote/dist/summernote-bs4.js', 'public/node_modules/summernote/dist/summernote-bs4.js');
+mix.combine('node_modules/jquery-sparkline/jquery.sparkline.min.js', 'public/node_modules/jquery-sparkline/jquery.sparkline.min.js');
+mix.combine('node_modules/chart.js/dist/Chart.min.js', 'public/node_modules/chart.js/dist/Chart.min.js');
+mix.combine('node_modules/owl.carousel/dist/owl.carousel.min.js', 'public/node_modules/owl.carousel/dist/owl.carousel.min.js');
+mix.combine('node_modules/chocolat/dist/js/jquery.chocolat.min.js', 'public/node_modules/chocolat/dist/js/jquery.chocolat.min.js');
+mix.combine('node_modules/simpleweather/jquery.simpleWeather.min.js', 'public/node_modules/simpleweather/jquery.simpleWeather.min.js');
+mix.combine('node_modules/jqvmap/dist/jquery.vmap.min.js', 'public/node_modules/jqvmap/dist/jquery.vmap.min.js');
+mix.combine('node_modules/jqvmap/dist/maps/jquery.vmap.world.js', 'public/node_modules/jqvmap/dist/maps/jquery.vmap.world.js');

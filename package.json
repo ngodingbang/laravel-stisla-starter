@@ -23,15 +23,21 @@
         "bootstrap": "^4.2.1",
         "bootstrap-daterangepicker": "^3.0.3",
         "bootstrap-social": "^5.1.1",
+        "chart.js": "^2.9.4",
+        "chocolat": "^0.4.21",
         "datatables": "^1.10.18",
         "datatables.net-plugins": "^1.10.24",
         "datatables.net-responsive-bs4": "^2.2.3",
         "datatables.net-select-bs4": "^1.2.7",
+        "flag-icon-css": "^3.5.0",
         "jquery": "^3.3.1",
+        "jquery-sparkline": "^2.4.0",
         "jquery.nicescroll": "^3.7.6",
+        "jqvmap": "https://github.com/10bestdesign/jqvmap",
         "laravel-mix": "^6.0.41",
         "lodash": "^4.17.19",
         "moment": "^2.24.0",
+        "owl.carousel": "^2.3.4",
         "popper.js": "^1.14.7",
         "postcss": "^8.2.1",
         "postcss-import": "^12.0.1",
@@ -39,7 +45,9 @@
         "sass": "^1.34.1",
         "sass-loader": "^11.1.1",
         "select2": "^4.0.6-rc.1",
+        "simpleweather": "^3.1.0",
         "summernote": "^0.8.20",
-        "tailwindcss": "^2.0.2"
+        "tailwindcss": "^2.0.2",
+        "weathericons": "^2.1.0"
     }
 }
