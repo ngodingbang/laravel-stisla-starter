@@ -1,6 +1,6 @@
-# GitHub Action for Laravel with MySQL
-# https://github.com/shivammathur/setup-php/blob/master/examples/laravel-mysql.yml
-name: Testing Laravel with MySQL
+# GitHub Action for Laravel with PostgreSQL
+# https://github.com/shivammathur/setup-php/blob/master/examples/laravel-postgres.yml
+name: Testing Laravel with PostgreSQL
 
 on: [push, pull_request]
 
@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-      mysql:
-        image: mysql:8.0.28
+      postgres:
+        image: postgres:12.6
         env:
-          MYSQL_ALLOW_EMPTY_PASSWORD: false
-          MYSQL_ROOT_PASSWORD: password
-          MYSQL_DATABASE: ngodingbang_laravel_stisla_starter
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: ngodingbang_laravel_stisla_starter
         ports:
-          - 3306/tcp
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+          - 5432/tcp
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 3
 
     strategy:
       fail-fast: false
@@ -35,11 +35,8 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
-          extensions: mbstring, dom, fileinfo, mysql
+          extensions: mbstring, dom, fileinfo, pgsql
           coverage: xdebug
-
-      - name: Start mysql service
-        run: sudo systemctl start mysql
 
       - name: Get composer cache directory
         id: composer-cache
@@ -66,7 +63,7 @@ jobs:
 
       - name: Prepare the application
         run: |
-          php -r "file_exists('.env') || copy('.env.github.mysql', '.env');"
+          php -r "file_exists('.env') || copy('.env.github.postgresql', '.env');"
           php artisan key:generate
 
       - name: Clear config
@@ -75,14 +72,14 @@ jobs:
       - name: Run migration
         run: php artisan migrate -v
         env:
-          DB_PORT: ${{ job.services.mysql.ports[3306] }}
+          DB_PORT: ${{ job.services.postgres.ports[5432] }}
 
       - name: Test with pest
         run: |
           mkdir -p build/logs
           vendor/bin/pest --verbose --coverage-clover build/logs/clover.xml
         env:
-          DB_PORT: ${{ job.services.mysql.ports[3306] }}
+          DB_PORT: ${{ job.services.postgres.ports[5432] }}
 
       - name: Upload scrutinizer coverage
         # https://scrutinizer-ci.com/docs/tools/external-code-coverage/#php

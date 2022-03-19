@@ -1,6 +1,7 @@
 # Laravel x Stisla
 
 [![Build Status](https://github.com/ngodingbang/laravel-stisla-starter/actions/workflows/laravel-mysql.yml/badge.svg)](https://github.com/ngodingbang/laravel-stisla-starter/actions)
+[![Build Status](https://github.com/ngodingbang/laravel-stisla-starter/actions/workflows/laravel-postgresql.yml/badge.svg)](https://github.com/ngodingbang/laravel-stisla-starter/actions)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ngodingbang/laravel-stisla-starter.svg?style=flat)](https://scrutinizer-ci.com/g/ngodingbang/laravel-stisla-starter)
 [![Coverage Status](https://coveralls.io/repos/github/ngodingbang/laravel-stisla-starter/badge.svg)](https://coveralls.io/github/ngodingbang/laravel-stisla-starter)
 [![Latest Stable Version](https://poser.pugx.org/ngodingbang/laravel-stisla-starter/v/stable.svg)](https://packagist.org/packages/ngodingbang/laravel-stisla-starter)
