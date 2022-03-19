@@ -1,11 +1,7 @@
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
-        <div class="sidebar-brand">
+        <div class="sidebar-brand sidebar-gone-show">
             <a href="{{ route('dashboard.ecommerce') }}">{{ config('app.name') }}</a>
-        </div>
-
-        <div class="sidebar-brand sidebar-brand-sm">
-            <a href="{{ route('dashboard.ecommerce') }}">{{ config('app.shortname') }}</a>
         </div>
 
         <ul class="sidebar-menu">
@@ -63,6 +59,12 @@
                 </ul>
             </li>
 
+            <li @if (Route::is('blank-page')) class="active" @endif>
+                <a class="nav-link" href="{{ route('blank-page') }}">
+                    <i class="far fa-square"></i> <span>@lang('Blank Page')</span>
+                </a>
+            </li>
+
             <li class="menu-header">
                 <span>@lang('Stisla')</span>
             </li>
@@ -71,7 +73,7 @@
                 <span>@lang('Pages')</span>
             </li>
 
-            <li class="nav-item dropdown @if (Route::is('features.*')) active @endif">
+            <li class="nav-item dropdown @if (Route::is('features.*' ,'profile.edit')) active @endif">
                 <a href="#" class="nav-link has-dropdown">
                     <i class="fas fa-bicycle"></i> <span>@lang('Features')</span>
                 </a>
@@ -95,8 +97,8 @@
                         </a>
                     </li>
 
-                    <li @if (Route::is('features.profile')) class="active" @endif>
-                        <a class="nav-link" href="{{ route('features.profile') }}">
+                    <li @if (Route::is('profile.edit')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('profile.edit') }}">
                             <span>@lang('Profile')</span>
                         </a>
                     </li>
@@ -120,6 +122,18 @@
                     </li>
                 </ul>
             </li>
+
+            <li @if (Route::is('credits')) class="active" @endif>
+                <a class="nav-link" href="{{ route('credits') }}">
+                    <i class="fas fa-pencil-ruler"></i> <span>@lang('Credits')</span>
+                </a>
+            </li>
         </ul>
+
+        <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+            <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
+                <i class="fas fa-rocket"></i> Documentation
+            </a>
+        </div>
     </aside>
 </div>

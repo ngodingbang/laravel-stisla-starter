@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="breadcrumb-item">
-                    <span>@lang('Tickets')</span>
+                    <a href="{{ route('features.tickets') }}"><span>@lang('Tickets')</span></a>
                 </div>
             </div>
         </div>

@@ -82,3 +82,4 @@ mix.combine('node_modules/chocolat/dist/js/jquery.chocolat.min.js', 'public/node
 mix.combine('node_modules/simpleweather/jquery.simpleWeather.min.js', 'public/node_modules/simpleweather/jquery.simpleWeather.min.js');
 mix.combine('node_modules/jqvmap/dist/jquery.vmap.min.js', 'public/node_modules/jqvmap/dist/jquery.vmap.min.js');
 mix.combine('node_modules/jqvmap/dist/maps/jquery.vmap.world.js', 'public/node_modules/jqvmap/dist/maps/jquery.vmap.world.js');
+mix.combine('node_modules/sticky-kit/dist/sticky-kit.min.js', 'public/node_modules/sticky-kit/dist/sticky-kit.min.js');

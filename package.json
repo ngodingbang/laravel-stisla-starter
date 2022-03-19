@@ -46,6 +46,7 @@
         "sass-loader": "^11.1.1",
         "select2": "^4.0.6-rc.1",
         "simpleweather": "^3.1.0",
+        "sticky-kit": "^1.1.3",
         "summernote": "^0.8.20",
         "tailwindcss": "^2.0.2",
         "weathericons": "^2.1.0"

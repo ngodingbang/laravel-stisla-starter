@@ -57,5 +57,6 @@
     "/node_modules/chocolat/dist/js/jquery.chocolat.min.js": "/node_modules/chocolat/dist/js/jquery.chocolat.min.js",
     "/node_modules/simpleweather/jquery.simpleWeather.min.js": "/node_modules/simpleweather/jquery.simpleWeather.min.js",
     "/node_modules/jqvmap/dist/jquery.vmap.min.js": "/node_modules/jqvmap/dist/jquery.vmap.min.js",
-    "/node_modules/jqvmap/dist/maps/jquery.vmap.world.js": "/node_modules/jqvmap/dist/maps/jquery.vmap.world.js"
+    "/node_modules/jqvmap/dist/maps/jquery.vmap.world.js": "/node_modules/jqvmap/dist/maps/jquery.vmap.world.js",
+    "/node_modules/sticky-kit/dist/sticky-kit.min.js": "/node_modules/sticky-kit/dist/sticky-kit.min.js"
 }
