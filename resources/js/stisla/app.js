@@ -263,5 +263,6 @@
       }, 100);
       chat.onShow.call(this, append_element);
   }
-})(jQuery, this, 0);
 
+  moment.locale($('html').attr('lang'));
+})(jQuery, this, 0);

@@ -24,7 +24,7 @@ Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function (
 
     #region starter
     Route::name('layout.')->group(function () {
-        Route::view('/layout-default', 'layout.default')->name('default')->middleware(UseLayoutDefault::class);
+        Route::view('/layout-default', 'layout.default')->name('default');
         Route::view('/layout-transparent', 'layout.transparent')->name('transparent')->middleware(UseLayoutTransparent::class);
         Route::view('/layout-top-navigation', 'layout.top-navigation')->name('top-navigation')->middleware(UseLayoutTopNavigation::class);
     });
