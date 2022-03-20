@@ -32,6 +32,9 @@
     "/js/helpers/geolocation.js": "/js/helpers/geolocation.js",
     "/js/page/dashboard-ecommerce.js": "/js/page/dashboard-ecommerce.js",
     "/js/page/dashboard-general.js": "/js/page/dashboard-general.js",
+    "/js/page/features-post-create.js": "/js/page/features-post-create.js",
+    "/js/page/features-posts.js": "/js/page/features-posts.js",
+    "/js/page/features-setting-detail.js": "/js/page/features-setting-detail.js",
     "/node_modules/select2/dist/css/select2.min.css": "/node_modules/select2/dist/css/select2.min.css",
     "/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css": "/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css",
     "/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css": "/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css",
@@ -44,6 +47,10 @@
     "/node_modules/chocolat/dist/css/chocolat.css": "/node_modules/chocolat/dist/css/chocolat.css",
     "/node_modules/weathericons/css/weather-icons.min.css": "/node_modules/weathericons/css/weather-icons.min.css",
     "/node_modules/weathericons/css/weather-icons-wind.min.css": "/node_modules/weathericons/css/weather-icons-wind.min.css",
+    "/node_modules/selectric/public/selectric.css": "/node_modules/selectric/public/selectric.css",
+    "/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css": "/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css",
+    "/node_modules/codemirror/lib/codemirror.css": "/node_modules/codemirror/lib/codemirror.css",
+    "/node_modules/codemirror/theme/duotone-dark.css": "/node_modules/codemirror/theme/duotone-dark.css",
     "/node_modules/select2/dist/js/select2.full.min.js": "/node_modules/select2/dist/js/select2.full.min.js",
     "/node_modules/datatables/media/js/jquery.dataTables.min.js": "/node_modules/datatables/media/js/jquery.dataTables.min.js",
     "/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js": "/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js",
@@ -58,5 +65,10 @@
     "/node_modules/simpleweather/jquery.simpleWeather.min.js": "/node_modules/simpleweather/jquery.simpleWeather.min.js",
     "/node_modules/jqvmap/dist/jquery.vmap.min.js": "/node_modules/jqvmap/dist/jquery.vmap.min.js",
     "/node_modules/jqvmap/dist/maps/jquery.vmap.world.js": "/node_modules/jqvmap/dist/maps/jquery.vmap.world.js",
-    "/node_modules/sticky-kit/dist/sticky-kit.min.js": "/node_modules/sticky-kit/dist/sticky-kit.min.js"
+    "/node_modules/sticky-kit/dist/sticky-kit.min.js": "/node_modules/sticky-kit/dist/sticky-kit.min.js",
+    "/node_modules/selectric/public/jquery.selectric.min.js": "/node_modules/selectric/public/jquery.selectric.min.js",
+    "/node_modules/@aacassandra/jquery_upload_preview/assets/js/jquery.uploadPreview.min.js": "/node_modules/@aacassandra/jquery_upload_preview/assets/js/jquery.uploadPreview.min.js",
+    "/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js": "/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js",
+    "/node_modules/codemirror/lib/codemirror.js": "/node_modules/codemirror/lib/codemirror.js",
+    "/node_modules/codemirror/mode/javascript/javascript.js": "/node_modules/codemirror/mode/javascript/javascript.js"
 }

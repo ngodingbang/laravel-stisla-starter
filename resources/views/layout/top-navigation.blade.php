@@ -7,7 +7,9 @@
 
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active">
-                    <a href="{{ route('dashboard.ecommerce') }}"><span>@lang('Dashboard')</span></a>
+                    <a href="{{ route('dashboard.ecommerce') }}">
+                        <span>@lang('Dashboard')</span>
+                    </a>
                 </div>
 
                 <div class="breadcrumb-item">
@@ -15,7 +17,9 @@
                 </div>
 
                 <div class="breadcrumb-item">
-                    <a href="{{ route('layout.top-navigation') }}"><span>@lang('Top Navigation')</span></a>
+                    <a href="{{ route('layout.top-navigation') }}">
+                        <span>@lang('Top Navigation')</span>
+                    </a>
                 </div>
             </div>
         </div>

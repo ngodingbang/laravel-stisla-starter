@@ -17,11 +17,15 @@
 
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active">
-                    <a href="{{ route('dashboard.ecommerce') }}"><span>@lang('Dashboard')</span></a>
+                    <a href="{{ route('dashboard.ecommerce') }}">
+                        <span>@lang('Dashboard')</span>
+                    </a>
                 </div>
 
                 <div class="breadcrumb-item">
-                    <a href="{{ route('features.tickets') }}"><span>@lang('Tickets')</span></a>
+                    <a href="{{ route('features.tickets') }}">
+                        <span>@lang('Tickets')</span>
+                    </a>
                 </div>
             </div>
         </div>

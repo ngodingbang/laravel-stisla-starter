@@ -67,6 +67,10 @@ mix.combine('node_modules/owl.carousel/dist/assets/owl.theme.default.min.css', '
 mix.combine('node_modules/chocolat/dist/css/chocolat.css', 'public/node_modules/chocolat/dist/css/chocolat.css');
 mix.combine('node_modules/weathericons/css/weather-icons.min.css', 'public/node_modules/weathericons/css/weather-icons.min.css');
 mix.combine('node_modules/weathericons/css/weather-icons-wind.min.css', 'public/node_modules/weathericons/css/weather-icons-wind.min.css');
+mix.combine('node_modules/selectric/public/selectric.css', 'public/node_modules/selectric/public/selectric.css');
+mix.combine('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css', 'public/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css');
+mix.combine('node_modules/codemirror/lib/codemirror.css', 'public/node_modules/codemirror/lib/codemirror.css');
+mix.combine('node_modules/codemirror/theme/duotone-dark.css', 'public/node_modules/codemirror/theme/duotone-dark.css');
 
 mix.combine('node_modules/select2/dist/js/select2.full.min.js', 'public/node_modules/select2/dist/js/select2.full.min.js');
 mix.combine('node_modules/datatables/media/js/jquery.dataTables.min.js', 'public/node_modules/datatables/media/js/jquery.dataTables.min.js');
@@ -83,3 +87,8 @@ mix.combine('node_modules/simpleweather/jquery.simpleWeather.min.js', 'public/no
 mix.combine('node_modules/jqvmap/dist/jquery.vmap.min.js', 'public/node_modules/jqvmap/dist/jquery.vmap.min.js');
 mix.combine('node_modules/jqvmap/dist/maps/jquery.vmap.world.js', 'public/node_modules/jqvmap/dist/maps/jquery.vmap.world.js');
 mix.combine('node_modules/sticky-kit/dist/sticky-kit.min.js', 'public/node_modules/sticky-kit/dist/sticky-kit.min.js');
+mix.combine('node_modules/selectric/public/jquery.selectric.min.js', 'public/node_modules/selectric/public/jquery.selectric.min.js');
+mix.combine('node_modules/@aacassandra/jquery_upload_preview/assets/js/jquery.uploadPreview.min.js', 'public/node_modules/@aacassandra/jquery_upload_preview/assets/js/jquery.uploadPreview.min.js');
+mix.combine('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js', 'public/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js');
+mix.combine('node_modules/codemirror/lib/codemirror.js', 'public/node_modules/codemirror/lib/codemirror.js');
+mix.combine('node_modules/codemirror/mode/javascript/javascript.js', 'public/node_modules/codemirror/mode/javascript/javascript.js');
