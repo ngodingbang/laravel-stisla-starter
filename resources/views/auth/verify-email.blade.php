@@ -43,7 +43,7 @@
                         </div>
                     </div>
 
-                    @include('components.footer')
+                    @include('components.simple-footer')
                 </div>
             </div>
         </div>

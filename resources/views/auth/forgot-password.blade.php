@@ -55,7 +55,7 @@
                         @lang('Already registered?') <a href="{{ route('login') }}">@lang('Login')</a>
                     </div>
 
-                    @include('components.footer')
+                    @include('components.simple-footer')
                 </div>
             </div>
         </div>
