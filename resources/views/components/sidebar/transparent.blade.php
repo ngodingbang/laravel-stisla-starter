@@ -73,6 +73,56 @@
                 <span>@lang('Pages')</span>
             </li>
 
+            <li class="nav-item dropdown @if (Route::is('errors.*')) active @endif">
+                <a href="#" class="nav-link has-dropdown">
+                    <i class="fas fa-exclamation"></i> <span>@lang('Errors')</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li @if (Route::is('errors.401')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('errors.401') }}">
+                            <span>401</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('errors.403')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('errors.403') }}">
+                            <span>403</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('errors.404')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('errors.404') }}">
+                            <span>404</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('errors.419')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('errors.419') }}">
+                            <span>419</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('errors.429')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('errors.429') }}">
+                            <span>429</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('errors.500')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('errors.500') }}">
+                            <span>500</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('errors.503')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('errors.503') }}">
+                            <span>503</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="nav-item dropdown @if (Route::is('features.*' ,'profile.edit')) active @endif">
                 <a href="#" class="nav-link has-dropdown">
                     <i class="fas fa-bicycle"></i> <span>@lang('Features')</span>

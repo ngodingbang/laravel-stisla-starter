@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Middleware\UseLayoutDefault;
 use App\Http\Middleware\UseLayoutTopNavigation;
 use App\Http\Middleware\UseLayoutTransparent;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,6 +34,16 @@ Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function (
     #endregion starter
 
     #region pages
+    Route::name('errors.')->group(function () {
+        Route::get('/errors-401', fn () => abort(Response::HTTP_UNAUTHORIZED))->name('401');
+        Route::get('/errors-403', fn () => abort(Response::HTTP_FORBIDDEN))->name('403');
+        Route::get('/errors-404', fn () => abort(Response::HTTP_NOT_FOUND))->name('404');
+        Route::get('/errors-419', fn () => abort(419))->name('419');
+        Route::get('/errors-429', fn () => abort(Response::HTTP_TOO_MANY_REQUESTS))->name('429');
+        Route::get('/errors-500', fn () => abort(Response::HTTP_INTERNAL_SERVER_ERROR))->name('500');
+        Route::get('/errors-503', fn () => abort(Response::HTTP_SERVICE_UNAVAILABLE))->name('503');
+    });
+
     Route::name('features.')->group(function () {
         Route::view('/features-activities', 'features.activities')->name('activities');
         Route::view('/features-post-create', 'features.post-create')->name('post-create');
