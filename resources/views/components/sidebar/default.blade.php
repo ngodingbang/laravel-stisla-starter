@@ -177,6 +177,32 @@
                 </ul>
             </li>
 
+            <li class="nav-item dropdown @if (Route::is('utilities.*')) active @endif">
+                <a href="#" class="nav-link has-dropdown">
+                    <i class="fas fa-ellipsis-h"></i> <span>@lang('Utilities')</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li @if (Route::is('utilities.contact')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('utilities.contact') }}">
+                            <span>@lang('Contact')</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('utilities.invoice')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('utilities.invoice') }}">
+                            <span>@lang('Invoice')</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('utilities.subscribe')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('utilities.subscribe') }}">
+                            <span>@lang('Subscribe')</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             <li @if (Route::is('credits')) class="active" @endif>
                 <a class="nav-link" href="{{ route('credits') }}">
                     <i class="fas fa-pencil-ruler"></i> <span>@lang('Credits')</span>

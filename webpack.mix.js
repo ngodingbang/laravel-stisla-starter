@@ -92,3 +92,4 @@ mix.combine('node_modules/@aacassandra/jquery_upload_preview/assets/js/jquery.up
 mix.combine('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js', 'public/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js');
 mix.combine('node_modules/codemirror/lib/codemirror.js', 'public/node_modules/codemirror/lib/codemirror.js');
 mix.combine('node_modules/codemirror/mode/javascript/javascript.js', 'public/node_modules/codemirror/mode/javascript/javascript.js');
+mix.combine('node_modules/gmaps/gmaps.min.js', 'public/node_modules/gmaps/gmaps.min.js');

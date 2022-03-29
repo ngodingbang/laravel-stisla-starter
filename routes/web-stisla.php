@@ -58,6 +58,12 @@ Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function (
         Route::put('/', 'update')->name('update');
     });
 
+    Route::name('utilities.')->group(function () {
+        Route::view('/utilities-contact', 'utilities.contact')->name('contact');
+        Route::view('/utilities-invoice', 'utilities.invoice')->name('invoice');
+        Route::view('/utilities-subscribe', 'utilities.subscribe')->name('subscribe');
+    });
+
     Route::view('/credits', 'credits')->name('credits');
     #endregion pages
 });
