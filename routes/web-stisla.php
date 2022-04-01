@@ -18,39 +18,47 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function () {
-    Route::name('dashboard.')->group(function () {
-        Route::view('/dashboard-general', 'dashboard.general')->name('general');
-        Route::view('/dashboard-ecommerce', 'dashboard.ecommerce')->name('ecommerce');
+    Route::prefix('/dashboard')->name('dashboard.')->group(function () {
+        Route::view('/general', 'dashboard.general')->name('general');
+        Route::view('/ecommerce', 'dashboard.ecommerce')->name('ecommerce');
     });
 
     #region starter
-    Route::name('layout.')->group(function () {
-        Route::view('/layout-default', 'layout.default')->name('default');
-        Route::view('/layout-transparent', 'layout.transparent')->name('transparent')->middleware(UseLayoutTransparent::class);
-        Route::view('/layout-top-navigation', 'layout.top-navigation')->name('top-navigation')->middleware(UseLayoutTopNavigation::class);
+    Route::prefix('/layout')->name('layout.')->group(function () {
+        Route::view('/default', 'layout.default')->name('default');
+        Route::view('/transparent', 'layout.transparent')->name('transparent')->middleware(UseLayoutTransparent::class);
+        Route::view('/top-navigation', 'layout.top-navigation')->name('top-navigation')->middleware(UseLayoutTopNavigation::class);
     });
 
     Route::view('/blank-page', 'blank-page')->name('blank-page');
     #endregion starter
 
     #region pages
-    Route::name('errors.')->group(function () {
-        Route::get('/errors-401', fn () => abort(Response::HTTP_UNAUTHORIZED))->name('401');
-        Route::get('/errors-403', fn () => abort(Response::HTTP_FORBIDDEN))->name('403');
-        Route::get('/errors-404', fn () => abort(Response::HTTP_NOT_FOUND))->name('404');
-        Route::get('/errors-419', fn () => abort(419))->name('419');
-        Route::get('/errors-429', fn () => abort(Response::HTTP_TOO_MANY_REQUESTS))->name('429');
-        Route::get('/errors-500', fn () => abort(Response::HTTP_INTERNAL_SERVER_ERROR))->name('500');
-        Route::get('/errors-503', fn () => abort(Response::HTTP_SERVICE_UNAVAILABLE))->name('503');
+    Route::prefix('/auth-page')->name('auth-page.')->group(function () {
+        Route::view('/forgot-password', 'auth.forgot-password')->name('forgot-password');
+        Route::view('/login', 'auth.login')->name('login');
+        Route::view('/login-2', 'auth.login-2')->name('login-2');
+        Route::view('/register', 'auth.register')->name('register');
+        Route::view('/reset-password/{token}', 'auth.reset-password', ['request' => request()])->name('reset-password');
     });
 
-    Route::name('features.')->group(function () {
-        Route::view('/features-activities', 'features.activities')->name('activities');
-        Route::view('/features-post-create', 'features.post-create')->name('post-create');
-        Route::view('/features-posts', 'features.posts')->name('posts');
-        Route::view('/features-settings', 'features.settings')->name('settings');
-        Route::view('/features-setting-detail', 'features.setting-detail')->name('setting-detail');
-        Route::view('/features-tickets', 'features.tickets')->name('tickets');
+    Route::prefix('/errors')->name('errors.')->group(function () {
+        Route::get('/401', fn () => abort(Response::HTTP_UNAUTHORIZED))->name('401');
+        Route::get('/403', fn () => abort(Response::HTTP_FORBIDDEN))->name('403');
+        Route::get('/404', fn () => abort(Response::HTTP_NOT_FOUND))->name('404');
+        Route::get('/419', fn () => abort(419))->name('419');
+        Route::get('/429', fn () => abort(Response::HTTP_TOO_MANY_REQUESTS))->name('429');
+        Route::get('/500', fn () => abort(Response::HTTP_INTERNAL_SERVER_ERROR))->name('500');
+        Route::get('/503', fn () => abort(Response::HTTP_SERVICE_UNAVAILABLE))->name('503');
+    });
+
+    Route::prefix('/features')->name('features.')->group(function () {
+        Route::view('/activities', 'features.activities')->name('activities');
+        Route::view('/post-create', 'features.post-create')->name('post-create');
+        Route::view('/posts', 'features.posts')->name('posts');
+        Route::view('/settings', 'features.settings')->name('settings');
+        Route::view('/setting-detail', 'features.setting-detail')->name('setting-detail');
+        Route::view('/tickets', 'features.tickets')->name('tickets');
     });
 
     Route::prefix('/profile')->name('profile.')->controller(ProfileController::class)->group(function () {
@@ -58,10 +66,10 @@ Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function (
         Route::put('/', 'update')->name('update');
     });
 
-    Route::name('utilities.')->group(function () {
-        Route::view('/utilities-contact', 'utilities.contact')->name('contact');
-        Route::view('/utilities-invoice', 'utilities.invoice')->name('invoice');
-        Route::view('/utilities-subscribe', 'utilities.subscribe')->name('subscribe');
+    Route::prefix('/utilities')->name('utilities.')->group(function () {
+        Route::view('/contact', 'utilities.contact')->name('contact');
+        Route::view('/invoice', 'utilities.invoice')->name('invoice');
+        Route::view('/subscribe', 'utilities.subscribe')->name('subscribe');
     });
 
     Route::view('/credits', 'credits')->name('credits');

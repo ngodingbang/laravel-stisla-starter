@@ -77,6 +77,47 @@
                 <span>@lang('Pages')</span>
             </li>
 
+            <li class="nav-item dropdown @if (Route::is('auth-page.*')) active @endif">
+                <a href="#" class="nav-link has-dropdown">
+                    <i class="far fa-user"></i> <span>@lang('Authentication')</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li @if (Route::is('auth-page.forgot-password')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('auth-page.forgot-password') }}">
+                            <span>@lang('Forgot Password')</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('auth-page.login')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('auth-page.login') }}">
+                            <span>@lang('Login')</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('auth-page.login-2')) class="active" @endif>
+                        <a class="nav-link beep beep-sidebar" href="{{ route('auth-page.login-2') }}">
+                            <span>@lang('Login 2')</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('auth-page.register')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('auth-page.register') }}">
+                            <span>@lang('Register')</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('auth-page.reset-password')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('auth-page.reset-password', [
+                            'token' => Password::createToken(Auth::user()),
+                            'email' => Auth::user()->email,
+                        ]) }}">
+                            <span>@lang('Reset Password')</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="nav-item dropdown @if (Route::is('errors.*')) active @endif">
                 <a href="#" class="nav-link has-dropdown">
                     <i class="fas fa-exclamation"></i> <span>@lang('Errors')</span>
