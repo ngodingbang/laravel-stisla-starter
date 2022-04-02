@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/dashboard-ecommerce';
+    public const HOME = '/dashboard/ecommerce';
 
     /**
      * {@inheritDoc}
