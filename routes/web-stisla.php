@@ -33,6 +33,14 @@ Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function (
     Route::view('/blank-page', 'blank-page')->name('blank-page');
     #endregion starter
 
+    #region stisla
+    Route::prefix('/forms')->name('forms.')->group(function () {
+        Route::view('/advanced-form', 'forms.advanced-form')->name('advanced-form');
+        Route::view('/editor', 'forms.editor')->name('editor');
+        Route::view('/validation', 'forms.validation')->name('validation');
+    });
+    #endregion stisla
+
     #region pages
     Route::prefix('/auth-page')->name('auth-page.')->group(function () {
         Route::view('/forgot-password', 'auth.forgot-password')->name('forgot-password');

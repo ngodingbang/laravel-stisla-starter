@@ -35,6 +35,7 @@
     "/js/page/features-post-create.js": "/js/page/features-post-create.js",
     "/js/page/features-posts.js": "/js/page/features-posts.js",
     "/js/page/features-setting-detail.js": "/js/page/features-setting-detail.js",
+    "/js/page/forms-advanced-forms.js": "/js/page/forms-advanced-forms.js",
     "/js/page/utilities-contact.js": "/js/page/utilities-contact.js",
     "/node_modules/select2/dist/css/select2.min.css": "/node_modules/select2/dist/css/select2.min.css",
     "/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css": "/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css",
@@ -52,6 +53,8 @@
     "/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css": "/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css",
     "/node_modules/codemirror/lib/codemirror.css": "/node_modules/codemirror/lib/codemirror.css",
     "/node_modules/codemirror/theme/duotone-dark.css": "/node_modules/codemirror/theme/duotone-dark.css",
+    "/node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css": "/node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css",
+    "/node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css": "/node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css",
     "/node_modules/select2/dist/js/select2.full.min.js": "/node_modules/select2/dist/js/select2.full.min.js",
     "/node_modules/datatables/media/js/jquery.dataTables.min.js": "/node_modules/datatables/media/js/jquery.dataTables.min.js",
     "/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js": "/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js",
@@ -72,5 +75,10 @@
     "/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js": "/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js",
     "/node_modules/codemirror/lib/codemirror.js": "/node_modules/codemirror/lib/codemirror.js",
     "/node_modules/codemirror/mode/javascript/javascript.js": "/node_modules/codemirror/mode/javascript/javascript.js",
-    "/node_modules/gmaps/gmaps.min.js": "/node_modules/gmaps/gmaps.min.js"
+    "/node_modules/gmaps/gmaps.min.js": "/node_modules/gmaps/gmaps.min.js",
+    "/node_modules/cleave.js/dist/cleave.min.js": "/node_modules/cleave.js/dist/cleave.min.js",
+    "/node_modules/cleave.js/dist/addons/cleave-phone.us.js": "/node_modules/cleave.js/dist/addons/cleave-phone.us.js",
+    "/node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js": "/node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js",
+    "/node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js": "/node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js",
+    "/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js": "/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"
 }
