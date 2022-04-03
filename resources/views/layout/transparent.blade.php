@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', 'Layout › Transparent Sidebar')
+
 @section('pre-script')
     <script src="{{ mix('node_modules/sticky-kit/dist/sticky-kit.min.js') }}"></script>
 @endsection

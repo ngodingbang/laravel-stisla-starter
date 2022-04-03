@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', __('General Settings'))
+
 @section('pre-style')
     <link rel="stylesheet" href="{{ mix('node_modules/codemirror/lib/codemirror.css') }}">
     <link rel="stylesheet" href="{{ mix('node_modules/codemirror/theme/duotone-dark.css') }}">

@@ -71,6 +71,8 @@ mix.combine('node_modules/selectric/public/selectric.css', 'public/node_modules/
 mix.combine('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css', 'public/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css');
 mix.combine('node_modules/codemirror/lib/codemirror.css', 'public/node_modules/codemirror/lib/codemirror.css');
 mix.combine('node_modules/codemirror/theme/duotone-dark.css', 'public/node_modules/codemirror/theme/duotone-dark.css');
+mix.combine('node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css', 'public/node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css');
+mix.combine('node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css', 'public/node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css');
 
 mix.combine('node_modules/select2/dist/js/select2.full.min.js', 'public/node_modules/select2/dist/js/select2.full.min.js');
 mix.combine('node_modules/datatables/media/js/jquery.dataTables.min.js', 'public/node_modules/datatables/media/js/jquery.dataTables.min.js');
@@ -93,3 +95,8 @@ mix.combine('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js', 
 mix.combine('node_modules/codemirror/lib/codemirror.js', 'public/node_modules/codemirror/lib/codemirror.js');
 mix.combine('node_modules/codemirror/mode/javascript/javascript.js', 'public/node_modules/codemirror/mode/javascript/javascript.js');
 mix.combine('node_modules/gmaps/gmaps.min.js', 'public/node_modules/gmaps/gmaps.min.js');
+mix.combine('node_modules/cleave.js/dist/cleave.min.js', 'public/node_modules/cleave.js/dist/cleave.min.js');
+mix.combine('node_modules/cleave.js/dist/addons/cleave-phone.us.js', 'public/node_modules/cleave.js/dist/addons/cleave-phone.us.js');
+mix.combine('node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js', 'public/node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js');
+mix.combine('node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js', 'public/node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js');
+mix.combine('node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js', 'public/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js');

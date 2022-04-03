@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', __('Contact'))
+
 @section('pre-script')
     <script src="https://maps.google.com/maps/api/js?key=AIzaSyB55Np3_WsZwUQ9NS7DP-HnneleZLYZDNw&amp;sensor=true"></script>
     <script src="{{ mix('node_modules/gmaps/gmaps.min.js') }}"></script>

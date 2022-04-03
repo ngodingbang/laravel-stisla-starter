@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', __('Posts'))
+
 @section('pre-style')
     <link rel="stylesheet" href="{{ mix('node_modules/selectric/public/selectric.css') }}">
 @endsection

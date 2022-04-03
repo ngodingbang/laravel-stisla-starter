@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', 'Ecommerce Dashboard')
+
 @section('pre-style')
     <link rel="stylesheet" href="{{ mix('node_modules/jqvmap/dist/jqvmap.min.css') }}">
     <link rel="stylesheet" href="{{ mix('node_modules/summernote/dist/summernote-bs4.css') }}">

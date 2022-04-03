@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', __('Post Create'))
+
 @section('pre-style')
     <link rel="stylesheet" href="{{ mix('node_modules/summernote/dist/summernote-bs4.css') }}">
     <link rel="stylesheet" href="{{ mix('node_modules/selectric/public/selectric.css') }}">
@@ -50,7 +52,7 @@
         </div>
 
         <div class="section-body">
-            <h2 class="section-title">Create New Post</h2>
+            <h2 class="section-title">@lang('Create New Post')</h2>
 
             <p class="section-lead">
                 On this page you can create a new post and fill in all fields.

@@ -73,6 +73,32 @@
                 <span>@lang('Stisla')</span>
             </li>
 
+            <li class="nav-item dropdown @if (Route::is('forms.*')) active @endif">
+                <a href="#" class="nav-link has-dropdown">
+                    <i class="far fa-file-alt"></i> <span>@lang('Forms')</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li @if (Route::is('forms.advanced-form')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('forms.advanced-form') }}">
+                            <span>@lang('Advanced Form')</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('forms.editor')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('forms.editor') }}">
+                            <span>@lang('Editor')</span>
+                        </a>
+                    </li>
+
+                    <li @if (Route::is('forms.validation')) class="active" @endif>
+                        <a class="nav-link" href="{{ route('forms.validation') }}">
+                            <span>@lang('Form Validation')</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="menu-header">
                 <span>@lang('Pages')</span>
             </li>
