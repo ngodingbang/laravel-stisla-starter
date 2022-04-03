@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', 'Layout › Top Navigation')
+
 @section('content')
     <section class="section">
         <div class="section-header">

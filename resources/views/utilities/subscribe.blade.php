@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', __('Subscribe'))
+
 @section('content')
     <section class="section">
         <div class="container mt-5">

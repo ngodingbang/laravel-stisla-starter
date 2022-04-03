@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', __('Tickets'))
+
 @section('pre-style')
     <link rel="stylesheet" href="{{ mix('node_modules/summernote/dist/summernote-bs4.css') }}">
     <link rel="stylesheet" href="{{ mix('node_modules/chocolat/dist/css/chocolat.css') }}">
