@@ -86,7 +86,7 @@ jobs:
 
       - name: Upload scrutinizer coverage
         # https://scrutinizer-ci.com/docs/tools/external-code-coverage/#php
-        if: contains(['7.4'], ${{ matrix.php-versions }})
+        if: contains(['7.4'], matrix.php-versions)
         run: |
           wget https://scrutinizer-ci.com/ocular.phar
           php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
