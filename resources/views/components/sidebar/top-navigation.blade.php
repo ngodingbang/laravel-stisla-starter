@@ -141,7 +141,7 @@
 
             <li class="nav-item active">
                 <a href="{{ url()->current() }}" class="nav-link">
-                    <i class="far fa-heart"></i> <span>{{ Route::currentRouteName() }}</span>
+                    <i class="far fa-heart"></i> <span>@hasSection('title') @yield('title') @else {{ config('app.name') }} @endif</span>
                 </a>
             </li>
         </ul>
