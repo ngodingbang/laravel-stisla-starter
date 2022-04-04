@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\SetLayoutConfig;
 use App\Http\Middleware\UseLayoutDefault;
 use App\Http\Middleware\UseLayoutTopNavigation;
 use App\Http\Middleware\UseLayoutTransparent;
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function () {
+Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function () {
     Route::prefix('/dashboard')->name('dashboard.')->group(function () {
         Route::view('/general', 'dashboard.general')->name('general');
         Route::view('/ecommerce', 'dashboard.ecommerce')->name('ecommerce');
@@ -25,7 +26,7 @@ Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function (
 
     #region starter
     Route::prefix('/layout')->name('layout.')->group(function () {
-        Route::view('/default', 'layout.default')->name('default');
+        Route::view('/default', 'layout.default')->name('default')->middleware(UseLayoutDefault::class);
         Route::view('/transparent', 'layout.transparent')->name('transparent')->middleware(UseLayoutTransparent::class);
         Route::view('/top-navigation', 'layout.top-navigation')->name('top-navigation')->middleware(UseLayoutTopNavigation::class);
     });

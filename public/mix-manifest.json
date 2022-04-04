@@ -30,6 +30,7 @@
     "/js/helpers/datatable-row-child.js": "/js/helpers/datatable-row-child.js",
     "/js/helpers/datatable.js": "/js/helpers/datatable.js",
     "/js/helpers/geolocation.js": "/js/helpers/geolocation.js",
+    "/js/page/bootstrap-modal.js": "/js/page/bootstrap-modal.js",
     "/js/page/dashboard-ecommerce.js": "/js/page/dashboard-ecommerce.js",
     "/js/page/dashboard-general.js": "/js/page/dashboard-general.js",
     "/js/page/features-post-create.js": "/js/page/features-post-create.js",
@@ -55,6 +56,7 @@
     "/node_modules/codemirror/theme/duotone-dark.css": "/node_modules/codemirror/theme/duotone-dark.css",
     "/node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css": "/node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css",
     "/node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css": "/node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css",
+    "/node_modules/prismjs/themes/prism.css": "/node_modules/prismjs/themes/prism.css",
     "/node_modules/select2/dist/js/select2.full.min.js": "/node_modules/select2/dist/js/select2.full.min.js",
     "/node_modules/datatables/media/js/jquery.dataTables.min.js": "/node_modules/datatables/media/js/jquery.dataTables.min.js",
     "/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js": "/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js",
@@ -80,5 +82,7 @@
     "/node_modules/cleave.js/dist/addons/cleave-phone.us.js": "/node_modules/cleave.js/dist/addons/cleave-phone.us.js",
     "/node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js": "/node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js",
     "/node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js": "/node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js",
-    "/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js": "/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"
+    "/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js": "/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js",
+    "/node_modules/jquery-ui-dist/jquery-ui.min.js": "/node_modules/jquery-ui-dist/jquery-ui.min.js",
+    "/node_modules/prismjs/prism.js": "/node_modules/prismjs/prism.js"
 }
