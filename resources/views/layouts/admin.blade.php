@@ -1,5 +1,9 @@
 @if (config('setting.layout', 'default') === 'transparent')
     @section('masterBodyClass', 'layout-2')
+
+    @push('pre-scripts')
+        <script src="{{ mix('node_modules/sticky-kit/dist/sticky-kit.min.js') }}"></script>
+    @endpush
 @elseif (config('setting.layout', 'default') === 'top-navigation')
     @section('masterBodyClass', 'layout-3')
 @endif

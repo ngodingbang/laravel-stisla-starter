@@ -14,6 +14,7 @@
 
     {{-- Template CSS --}}
     @yield('pre-style')
+    @stack('pre-styles')
     <link rel="stylesheet" href="{{ mix('css/stisla/style.css') }}">
     <link rel="stylesheet" href="{{ mix('css/stisla/components.css') }}">
     @yield('style')
@@ -34,6 +35,7 @@
     {{-- Script --}}
     <script src="{{ mix('js/stisla/master.js') }}"></script>
     @yield('pre-script')
+    @stack('pre-scripts')
     <script src="{{ mix('js/stisla/app.js') }}"></script>
     <script src="{{ mix('js/stisla/scripts.js') }}"></script>
     @yield('script')

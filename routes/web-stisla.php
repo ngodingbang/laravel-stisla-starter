@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\SetLayoutConfig;
 use App\Http\Middleware\UseLayoutDefault;
 use App\Http\Middleware\UseLayoutTopNavigation;
 use App\Http\Middleware\UseLayoutTransparent;
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function () {
+Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function () {
     Route::prefix('/dashboard')->name('dashboard.')->group(function () {
         Route::view('/general', 'dashboard.general')->name('general');
         Route::view('/ecommerce', 'dashboard.ecommerce')->name('ecommerce');
@@ -25,12 +26,35 @@ Route::middleware('auth', 'verified', UseLayoutDefault::class)->group(function (
 
     #region starter
     Route::prefix('/layout')->name('layout.')->group(function () {
-        Route::view('/default', 'layout.default')->name('default');
+        Route::view('/default', 'layout.default')->name('default')->middleware(UseLayoutDefault::class);
         Route::view('/transparent', 'layout.transparent')->name('transparent')->middleware(UseLayoutTransparent::class);
         Route::view('/top-navigation', 'layout.top-navigation')->name('top-navigation')->middleware(UseLayoutTopNavigation::class);
     });
 
     Route::view('/blank-page', 'blank-page')->name('blank-page');
+
+    Route::prefix('/bootstrap')->name('bootstrap.')->group(function () {
+        Route::view('/alert', 'bootstrap.alert')->name('alert');
+        Route::view('/badge', 'bootstrap.badge')->name('badge');
+        Route::view('/breadcrumb', 'bootstrap.breadcrumb')->name('breadcrumb');
+        Route::view('/buttons', 'bootstrap.buttons')->name('buttons');
+        Route::view('/card', 'bootstrap.card')->name('card');
+        Route::view('/carousel', 'bootstrap.carousel')->name('carousel');
+        Route::view('/collapse', 'bootstrap.collapse')->name('collapse');
+        Route::view('/dropdown', 'bootstrap.dropdown')->name('dropdown');
+        Route::view('/form', 'bootstrap.form')->name('form');
+        Route::view('/list-group', 'bootstrap.list-group')->name('list-group');
+        Route::view('/media-object', 'bootstrap.media-object')->name('media-object');
+        Route::view('/modal', 'bootstrap.modal')->name('modal');
+        Route::view('/nav', 'bootstrap.nav')->name('nav');
+        Route::view('/navbar', 'bootstrap.navbar')->name('navbar');
+        Route::view('/pagination', 'bootstrap.pagination')->name('pagination');
+        Route::view('/popover', 'bootstrap.popover')->name('popover');
+        Route::view('/progress', 'bootstrap.progress')->name('progress');
+        Route::view('/table', 'bootstrap.table')->name('table');
+        Route::view('/tooltip', 'bootstrap.tooltip')->name('tooltip');
+        Route::view('/typography', 'bootstrap.typography')->name('typography');
+    });
     #endregion starter
 
     #region stisla

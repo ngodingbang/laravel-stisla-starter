@@ -2,23 +2,12 @@
 
 namespace App\Http\Middleware;
 
-use Closure;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Config;
-
-class UseLayoutTopNavigation
+class UseLayoutTopNavigation extends AbstractUseLayout
 {
     /**
-     * Handle an incoming request.
+     * The specified value of layout.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
-     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
+     * @var string
      */
-    public function handle(Request $request, Closure $next)
-    {
-        Config::set('setting.layout', 'top-navigation');
-
-        return $next($request);
-    }
+    protected $layout = 'top-navigation';
 }

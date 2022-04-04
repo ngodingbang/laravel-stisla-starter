@@ -35,7 +35,7 @@
         <ul class="navbar-nav">
             <li class="nav-item dropdown @if (Route::is('dashboard.*')) active @endif">
                 <a href="#" data-toggle="dropdown" class="nav-link has-dropdown">
-                    <i class="fas fa-fire"></i><span>@lang('Dashboard')</span>
+                    <i class="fas fa-fire"></i> <span>@lang('Dashboard')</span>
                 </a>
 
                 <ul class="dropdown-menu">
@@ -53,15 +53,35 @@
                 </ul>
             </li>
 
-            <li class="nav-item @if (Route::is('layout.top-navigation')) active @endif">
-                <a href="{{ route('layout.top-navigation') }}" class="nav-link">
-                    <i class="far fa-heart"></i><span>@lang('Top Navigation')</span>
+            <li class="nav-item dropdown @if (Route::is('layout.*')) active @endif">
+                <a href="#" data-toggle="dropdown" class="nav-link has-dropdown">
+                    <i class="fas fa-columns"></i> <span>@lang('Layout')</span>
                 </a>
+
+                <ul class="dropdown-menu">
+                    <li class="nav-item @if (Route::is('layout.default')) active @endif">
+                        <a href="{{ route('layout.default') }}" class="nav-link">
+                            <span>@lang('Default Layout')</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item @if (Route::is('layout.transparent')) active @endif">
+                        <a href="{{ route('layout.transparent') }}" class="nav-link">
+                            <span>@lang('Transparent Sidebar')</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item @if (Route::is('layout.top-navigation')) active @endif">
+                        <a href="{{ route('layout.top-navigation') }}" class="nav-link">
+                            <span>@lang('Top Navigation')</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
 
             <li class="nav-item dropdown">
                 <a href="#" data-toggle="dropdown" class="nav-link has-dropdown">
-                    <i class="far fa-clone"></i><span>@lang('Multiple Dropdown')</span>
+                    <i class="far fa-clone"></i> <span>@lang('Multiple Dropdown')</span>
                 </a>
 
                 <ul class="dropdown-menu">
@@ -117,6 +137,12 @@
                         </ul>
                     </li>
                 </ul>
+            </li>
+
+            <li class="nav-item active">
+                <a href="{{ url()->current() }}" class="nav-link">
+                    <i class="far fa-heart"></i> <span>@hasSection('title') @yield('title') @else {{ config('app.name') }} @endif</span>
+                </a>
             </li>
         </ul>
     </div>

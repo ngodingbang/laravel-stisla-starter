@@ -73,6 +73,7 @@ mix.combine('node_modules/codemirror/lib/codemirror.css', 'public/node_modules/c
 mix.combine('node_modules/codemirror/theme/duotone-dark.css', 'public/node_modules/codemirror/theme/duotone-dark.css');
 mix.combine('node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css', 'public/node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css');
 mix.combine('node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css', 'public/node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css');
+mix.combine('node_modules/prismjs/themes/prism.css', 'public/node_modules/prismjs/themes/prism.css');
 
 mix.combine('node_modules/select2/dist/js/select2.full.min.js', 'public/node_modules/select2/dist/js/select2.full.min.js');
 mix.combine('node_modules/datatables/media/js/jquery.dataTables.min.js', 'public/node_modules/datatables/media/js/jquery.dataTables.min.js');
@@ -100,3 +101,5 @@ mix.combine('node_modules/cleave.js/dist/addons/cleave-phone.us.js', 'public/nod
 mix.combine('node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js', 'public/node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js');
 mix.combine('node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js', 'public/node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js');
 mix.combine('node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js', 'public/node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js');
+mix.combine('node_modules/jquery-ui-dist/jquery-ui.min.js', 'public/node_modules/jquery-ui-dist/jquery-ui.min.js');
+mix.combine('node_modules/prismjs/prism.js', 'public/node_modules/prismjs/prism.js');
