@@ -32,6 +32,29 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
     });
 
     Route::view('/blank-page', 'blank-page')->name('blank-page');
+
+    Route::prefix('/bootstrap')->name('bootstrap.')->group(function () {
+        Route::view('/alert', 'bootstrap.alert')->name('alert');
+        Route::view('/badge', 'bootstrap.badge')->name('badge');
+        Route::view('/breadcrumb', 'bootstrap.breadcrumb')->name('breadcrumb');
+        Route::view('/buttons', 'bootstrap.buttons')->name('buttons');
+        Route::view('/card', 'bootstrap.card')->name('card');
+        Route::view('/carousel', 'bootstrap.carousel')->name('carousel');
+        Route::view('/collapse', 'bootstrap.collapse')->name('collapse');
+        Route::view('/dropdown', 'bootstrap.dropdown')->name('dropdown');
+        Route::view('/form', 'bootstrap.form')->name('form');
+        Route::view('/list-group', 'bootstrap.list-group')->name('list-group');
+        Route::view('/media-object', 'bootstrap.media-object')->name('media-object');
+        Route::view('/modal', 'bootstrap.modal')->name('modal');
+        Route::view('/nav', 'bootstrap.nav')->name('nav');
+        Route::view('/navbar', 'bootstrap.navbar')->name('navbar');
+        Route::view('/pagination', 'bootstrap.pagination')->name('pagination');
+        Route::view('/popover', 'bootstrap.popover')->name('popover');
+        Route::view('/progress', 'bootstrap.progress')->name('progress');
+        Route::view('/table', 'bootstrap.table')->name('table');
+        Route::view('/tooltip', 'bootstrap.tooltip')->name('tooltip');
+        Route::view('/typography', 'bootstrap.typography')->name('typography');
+    });
     #endregion starter
 
     #region stisla
