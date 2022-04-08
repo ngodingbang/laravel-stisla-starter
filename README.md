@@ -1,7 +1,10 @@
 # Laravel x Stisla
 
+![Image of Package](https://banners.beyondco.de/Laravel%20x%20Stisla.png?theme=light&packageManager=composer+require&packageName=ngodingbang%2Flaravel-stisla-starter&pattern=architect&style=style_1&description=The+Laravel+Framework+x+Stisla+Admin+Template.&md=1&showWatermark=0&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg)
+
 [![Build Status](https://github.com/ngodingbang/laravel-stisla-starter/actions/workflows/laravel-mysql-8.yml/badge.svg)](https://github.com/ngodingbang/laravel-stisla-starter/actions)
 [![Build Status](https://github.com/ngodingbang/laravel-stisla-starter/actions/workflows/laravel-postgresql.yml/badge.svg)](https://github.com/ngodingbang/laravel-stisla-starter/actions)
+[![StyleCI](https://github.styleci.io/repos/463512983/shield)](https://github.styleci.io/repos/463512983)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ngodingbang/laravel-stisla-starter.svg?style=flat)](https://scrutinizer-ci.com/g/ngodingbang/laravel-stisla-starter)
 [![Coverage Status](https://coveralls.io/repos/github/ngodingbang/laravel-stisla-starter/badge.svg)](https://coveralls.io/github/ngodingbang/laravel-stisla-starter)
 [![Latest Stable Version](https://poser.pugx.org/ngodingbang/laravel-stisla-starter/v/stable.svg)](https://packagist.org/packages/ngodingbang/laravel-stisla-starter)
