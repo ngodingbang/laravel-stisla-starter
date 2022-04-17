@@ -36,6 +36,7 @@
         "datatables.net-plugins": "^1.10.24",
         "datatables.net-responsive-bs4": "^2.2.3",
         "datatables.net-select-bs4": "^1.2.7",
+        "dropzone": "^5.5.1",
         "flag-icon-css": "^3.5.0",
         "gmaps": "^0.4.24",
         "jquery": "^3.3.1",
