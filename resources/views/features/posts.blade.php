@@ -3,11 +3,11 @@
 @section('title', __('Posts'))
 
 @section('pre-style')
-    <link rel="stylesheet" href="{{ mix('node_modules/selectric/public/selectric.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/selectric/public/selectric.css') }}">
 @endsection
 
 @section('pre-script')
-    <script src="{{ mix('node_modules/selectric/public/jquery.selectric.min.js') }}"></script>
+    <script src="{{ asset('node_modules/selectric/public/jquery.selectric.min.js') }}"></script>
 @endsection
 
 @section('script')

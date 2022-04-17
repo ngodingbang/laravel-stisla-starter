@@ -3,17 +3,17 @@
 @section('title', 'Forms › Editor')
 
 @section('pre-style')
-    <link rel="stylesheet" href="{{ mix('node_modules/summernote/dist/summernote-bs4.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/codemirror/lib/codemirror.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/codemirror/theme/duotone-dark.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/selectric/public/selectric.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/summernote/dist/summernote-bs4.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/codemirror/lib/codemirror.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/codemirror/theme/duotone-dark.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/selectric/public/selectric.css') }}">
 @endsection
 
 @section('pre-script')
-    <script src="{{ mix('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
-    <script src="{{ mix('node_modules/codemirror/lib/codemirror.js') }}"></script>
-    <script src="{{ mix('node_modules/codemirror/mode/javascript/javascript.js') }}"></script>
-    <script src="{{ mix('node_modules/selectric/public/jquery.selectric.min.js') }}"></script>
+    <script src="{{ asset('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
+    <script src="{{ asset('node_modules/codemirror/lib/codemirror.js') }}"></script>
+    <script src="{{ asset('node_modules/codemirror/mode/javascript/javascript.js') }}"></script>
+    <script src="{{ asset('node_modules/selectric/public/jquery.selectric.min.js') }}"></script>
 @endsection
 
 @section('content')

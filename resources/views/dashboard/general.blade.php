@@ -3,19 +3,19 @@
 @section('title', 'General Dashboard')
 
 @section('pre-style')
-    <link rel="stylesheet" href="{{ mix('node_modules/jqvmap/dist/jqvmap.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/weathericons/css/weather-icons.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/weathericons/css/weather-icons-wind.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/summernote/dist/summernote-bs4.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/jqvmap/dist/jqvmap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/weathericons/css/weather-icons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/weathericons/css/weather-icons-wind.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/summernote/dist/summernote-bs4.css') }}">
 @endsection
 
 @section('pre-script')
-    <script src="{{ mix('node_modules/simpleweather/jquery.simpleWeather.min.js') }}"></script>
-    <script src="{{ mix('node_modules/chart.js/dist/Chart.min.js') }}"></script>
-    <script src="{{ mix('node_modules/jqvmap/dist/jquery.vmap.min.js') }}"></script>
-    <script src="{{ mix('node_modules/jqvmap/dist/maps/jquery.vmap.world.js') }}"></script>
-    <script src="{{ mix('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
-    <script src="{{ mix('node_modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
+    <script src="{{ asset('node_modules/simpleweather/jquery.simpleWeather.min.js') }}"></script>
+    <script src="{{ asset('node_modules/chart.js/dist/Chart.min.js') }}"></script>
+    <script src="{{ asset('node_modules/jqvmap/dist/jquery.vmap.min.js') }}"></script>
+    <script src="{{ asset('node_modules/jqvmap/dist/maps/jquery.vmap.world.js') }}"></script>
+    <script src="{{ asset('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
+    <script src="{{ asset('node_modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
 @endsection
 
 @section('script')

@@ -3,12 +3,12 @@
 @section('title', __('Profile'))
 
 @section('pre-style')
-    <link rel="stylesheet" href="{{ mix('node_modules/bootstrap-social/bootstrap-social.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/summernote/dist/summernote-bs4.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-social/bootstrap-social.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/summernote/dist/summernote-bs4.css') }}">
 @endsection
 
 @section('pre-script')
-    <script src="{{ mix('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
+    <script src="{{ asset('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
 @endsection
 
 @section('content')

@@ -46,7 +46,7 @@
         "jquery-sparkline": "^2.4.0",
         "jquery-ui-dist": "^1.12.1",
         "jquery.nicescroll": "^3.7.6",
-        "jqvmap": "^1.5.1",
+        "jqvmap": "https://github.com/10bestdesign/jqvmap",
         "laravel-mix": "^6.0.41",
         "lodash": "^4.17.19",
         "moment": "^2.24.0",
