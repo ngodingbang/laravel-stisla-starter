@@ -191,6 +191,93 @@
         <span>@lang('Stisla')</span>
     </li>
 
+    <li class="nav-item dropdown @if (Route::is('components.*')) active @endif">
+        <a href="#" class="nav-link has-dropdown">
+            <i class="fas fa-th-large"></i> <span>@lang('Components')</span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li @if (Route::is('components.article')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.article') }}">
+                    <span>@lang('Article')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.avatar')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.avatar') }}">
+                    <span>@lang('Avatar')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.chat-box')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.chat-box') }}">
+                    <span>@lang('Chat Box')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.empty-state')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.empty-state') }}">
+                    <span>@lang('Empty State')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.gallery')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.gallery') }}">
+                    <span>@lang('Gallery')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.hero')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.hero') }}">
+                    <span>@lang('Hero')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.multiple-upload')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.multiple-upload') }}">
+                    <span>@lang('Multiple Upload')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.pricing')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.pricing') }}">
+                    <span>@lang('Pricing')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.statistic')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.statistic') }}">
+                    <span>@lang('Statistic')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.tab')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.tab') }}">
+                    <span>@lang('Tab')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.table')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.table') }}">
+                    <span>@lang('Table')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.user')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.user') }}">
+                    <span>@lang('User')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.wizard')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.wizard') }}">
+                    <span>@lang('Wizard')</span>
+                </a>
+            </li>
+
+        </ul>
+    </li>
+
     <li class="nav-item dropdown @if (Route::is('forms.*')) active @endif">
         <a href="#" class="nav-link has-dropdown">
             <i class="far fa-file-alt"></i> <span>@lang('Forms')</span>

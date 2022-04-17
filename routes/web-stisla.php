@@ -58,6 +58,22 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
     #endregion starter
 
     #region stisla
+    Route::prefix('/components')->name('components.')->group(function () {
+        Route::view('/article', 'components-page.article')->name('article');
+        Route::view('/avatar', 'components-page.avatar')->name('avatar');
+        Route::view('/chat-box', 'components-page.chat-box')->name('chat-box');
+        Route::view('/empty-state', 'components-page.empty-state')->name('empty-state');
+        Route::view('/gallery', 'components-page.gallery')->name('gallery');
+        Route::view('/hero', 'components-page.hero')->name('hero');
+        Route::view('/multiple-upload', 'components-page.multiple-upload')->name('multiple-upload');
+        Route::view('/pricing', 'components-page.pricing')->name('pricing');
+        Route::view('/statistic', 'components-page.statistic')->name('statistic');
+        Route::view('/tab', 'components-page.tab')->name('tab');
+        Route::view('/table', 'components-page.table')->name('table');
+        Route::view('/user', 'components-page.user')->name('user');
+        Route::view('/wizard', 'components-page.wizard')->name('wizard');
+    });
+
     Route::prefix('/forms')->name('forms.')->group(function () {
         Route::view('/advanced-form', 'forms.advanced-form')->name('advanced-form');
         Route::view('/editor', 'forms.editor')->name('editor');
