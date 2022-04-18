@@ -65,6 +65,7 @@ mix.copy('node_modules/chocolat', 'public/node_modules/chocolat');
 mix.copy('node_modules/cleave.js', 'public/node_modules/cleave.js');
 mix.copy('node_modules/codemirror', 'public/node_modules/codemirror');
 mix.copy('node_modules/datatables', 'public/node_modules/datatables');
+mix.copy('node_modules/datatables.net-bs4', 'public/node_modules/datatables.net-bs4');
 mix.copy('node_modules/datatables.net-responsive-bs4', 'public/node_modules/datatables.net-responsive-bs4');
 mix.copy('node_modules/datatables.net-select-bs4', 'public/node_modules/datatables.net-select-bs4');
 mix.copy('node_modules/dropzone', 'public/node_modules/dropzone');
