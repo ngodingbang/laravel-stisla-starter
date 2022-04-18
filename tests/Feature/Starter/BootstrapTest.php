@@ -125,4 +125,3 @@ it('has boostrap typography page', function () {
         ->get(route('bootstrap.typography'))
         ->assertOk();
 });
-

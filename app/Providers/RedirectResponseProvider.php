@@ -26,7 +26,7 @@ class RedirectResponseProvider extends ServiceProvider
             /** @var \Illuminate\Http\RedirectResponse $redirectResponse */
             $redirectResponse = $this;
 
-            $type = 'alert-' . $type;
+            $type = 'alert-'.$type;
             $alert = compact('type', 'message');
 
             return $redirectResponse->with(compact('alert'));

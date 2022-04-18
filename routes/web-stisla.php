@@ -91,13 +91,27 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
     });
 
     Route::prefix('/errors')->name('errors.')->group(function () {
-        Route::get('/401', function () { abort(Response::HTTP_UNAUTHORIZED); })->name('401');
-        Route::get('/403', function () { abort(Response::HTTP_FORBIDDEN); })->name('403');
-        Route::get('/404', function () { abort(Response::HTTP_NOT_FOUND); })->name('404');
-        Route::get('/419', function () { abort(419); })->name('419');
-        Route::get('/429', function () { abort(Response::HTTP_TOO_MANY_REQUESTS); })->name('429');
-        Route::get('/500', function () { abort(Response::HTTP_INTERNAL_SERVER_ERROR); })->name('500');
-        Route::get('/503', function () { abort(Response::HTTP_SERVICE_UNAVAILABLE); })->name('503');
+        Route::get('/401', function () {
+            abort(Response::HTTP_UNAUTHORIZED);
+        })->name('401');
+        Route::get('/403', function () {
+            abort(Response::HTTP_FORBIDDEN);
+        })->name('403');
+        Route::get('/404', function () {
+            abort(Response::HTTP_NOT_FOUND);
+        })->name('404');
+        Route::get('/419', function () {
+            abort(419);
+        })->name('419');
+        Route::get('/429', function () {
+            abort(Response::HTTP_TOO_MANY_REQUESTS);
+        })->name('429');
+        Route::get('/500', function () {
+            abort(Response::HTTP_INTERNAL_SERVER_ERROR);
+        })->name('500');
+        Route::get('/503', function () {
+            abort(Response::HTTP_SERVICE_UNAVAILABLE);
+        })->name('503');
     });
 
     Route::prefix('/features')->name('features.')->group(function () {

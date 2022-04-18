@@ -40,7 +40,7 @@ class UpdateRequest extends FormRequest
             Arr::forget($validated, 'password');
         }
 
-        if (!is_null($key)) {
+        if (! is_null($key)) {
             return data_get($validated, $key, $default);
         }
 

@@ -32,7 +32,7 @@ class LoginRequest extends FormRequest
     public function attributes()
     {
         return [
-            'identifier' => trans('Email') . '/' . trans('Username'),
+            'identifier' => trans('Email').'/'.trans('Username'),
             'password' => trans('Password'),
         ];
     }
@@ -50,7 +50,7 @@ class LoginRequest extends FormRequest
 
         $credentials = $this->only('password');
 
-        if (!Validator::make($this->only('identifier'), ['identifier' => 'email'])->fails()) {
+        if (! Validator::make($this->only('identifier'), ['identifier' => 'email'])->fails()) {
             $credentials['email'] = $this->all('identifier');
         } else {
             $credentials['username'] = $this->all('identifier');
