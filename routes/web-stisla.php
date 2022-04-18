@@ -24,7 +24,7 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
         Route::view('/ecommerce', 'dashboard.ecommerce')->name('ecommerce');
     });
 
-    #region starter
+    // #region starter
     Route::prefix('/layout')->name('layout.')->group(function () {
         Route::view('/default', 'layout.default')->name('default')->middleware(UseLayoutDefault::class);
         Route::view('/transparent', 'layout.transparent')->name('transparent')->middleware(UseLayoutTransparent::class);
@@ -55,9 +55,9 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
         Route::view('/tooltip', 'bootstrap.tooltip')->name('tooltip');
         Route::view('/typography', 'bootstrap.typography')->name('typography');
     });
-    #endregion starter
+    // #endregion starter
 
-    #region stisla
+    // #region stisla
     Route::prefix('/components')->name('components.')->group(function () {
         Route::view('/article', 'components-page.article')->name('article');
         Route::view('/avatar', 'components-page.avatar')->name('avatar');
@@ -79,9 +79,9 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
         Route::view('/editor', 'forms.editor')->name('editor');
         Route::view('/validation', 'forms.validation')->name('validation');
     });
-    #endregion stisla
+    // #endregion stisla
 
-    #region pages
+    // #region pages
     Route::prefix('/auth-page')->name('auth-page.')->group(function () {
         Route::view('/forgot-password', 'auth.forgot-password')->name('forgot-password');
         Route::view('/login', 'auth.login')->name('login');
@@ -135,5 +135,5 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
     });
 
     Route::view('/credits', 'credits')->name('credits');
-    #endregion pages
+    // #endregion pages
 });

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Password;
-
 use function Pest\Laravel\actingAs;
 
 beforeEach(function () {
