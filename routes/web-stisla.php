@@ -90,6 +90,21 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
         Route::view('/route', 'gmaps.route')->name('route');
         Route::view('/simple', 'gmaps.simple')->name('simple');
     });
+
+    Route::prefix('/modules')->name('modules.')->group(function () {
+        Route::view('/calendar', 'modules.calendar')->name('calendar');
+        Route::view('/chartjs', 'modules.chartjs')->name('chartjs');
+        Route::view('/datatables', 'modules.datatables')->name('datatables');
+        Route::view('/flag', 'modules.flag')->name('flag');
+        Route::view('/font-awesome', 'modules.font-awesome')->name('font-awesome');
+        Route::view('/ion-icons', 'modules.ion-icons')->name('ion-icons');
+        Route::view('/owl-carousel', 'modules.owl-carousel')->name('owl-carousel');
+        Route::view('/sparkline', 'modules.sparkline')->name('sparkline');
+        Route::view('/sweet-alert', 'modules.sweet-alert')->name('sweet-alert');
+        Route::view('/toastr', 'modules.toastr')->name('toastr');
+        Route::view('/vector-map', 'modules.vector-map')->name('vector-map');
+        Route::view('/weather-icon', 'modules.weather-icon')->name('weather-icon');
+    });
     // #endregion stisla
 
     // #region pages

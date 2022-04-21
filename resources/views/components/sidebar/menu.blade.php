@@ -360,6 +360,86 @@
         </ul>
     </li>
 
+    <li class="nav-item dropdown @if (Route::is('modules.*')) active @endif">
+        <a href="#" class="nav-link has-dropdown">
+            <i class="fas fa-plug"></i> <span>@lang('Modules')</span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li @if (Route::is('modules.calendar')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.calendar') }}">
+                    <span>Calendar</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.chartjs')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.chartjs') }}">
+                    <span>ChartJS</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.datatables')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.datatables') }}">
+                    <span>DataTables</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.flag')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.flag') }}">
+                    <span>Flag</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.font-awesome')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.font-awesome') }}">
+                    <span>Font Awesome</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.ion-icons')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.ion-icons') }}">
+                    <span>Ion Icons</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.owl-carousel')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.owl-carousel') }}">
+                    <span>Owl Carousel</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.sparkline')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.sparkline') }}">
+                    <span>Sparkline</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.sweet-alert')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.sweet-alert') }}">
+                    <span>Sweet Alert</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.toastr')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.toastr') }}">
+                    <span>Toastr</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.vector-map')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.vector-map') }}">
+                    <span>Vector Map</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.weather-icon')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.weather-icon') }}">
+                    <span>Weather Icon</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
     <li class="menu-header">
         <span>@lang('Pages')</span>
     </li>
