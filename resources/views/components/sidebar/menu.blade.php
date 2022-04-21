@@ -304,6 +304,62 @@
         </ul>
     </li>
 
+    <li class="nav-item dropdown @if (Route::is('gmaps.*')) active @endif">
+        <a href="#" class="nav-link has-dropdown">
+            <i class="fas fa-map-marker-alt"></i> <span>Google Maps</span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li @if (Route::is('gmaps.advanced-route')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.advanced-route') }}">
+                    <span>Advanced Route</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.draggable-marker')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.draggable-marker') }}">
+                    <span>Draggable Marker</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.geocoding')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.geocoding') }}">
+                    <span>Geocoding</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.geolocation')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.geolocation') }}">
+                    <span>Geolocation</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.marker')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.marker') }}">
+                    <span>Marker</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.multiple-marker')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.multiple-marker') }}">
+                    <span>Multiple Marker</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.route')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.route') }}">
+                    <span>Route</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.simple')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.simple') }}">
+                    <span>Simple</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
     <li class="menu-header">
         <span>@lang('Pages')</span>
     </li>

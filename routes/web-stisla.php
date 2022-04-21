@@ -79,6 +79,17 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
         Route::view('/editor', 'forms.editor')->name('editor');
         Route::view('/validation', 'forms.validation')->name('validation');
     });
+
+    Route::prefix('/gmaps')->name('gmaps.')->group(function () {
+        Route::view('/advanced-route', 'gmaps.advanced-route')->name('advanced-route');
+        Route::view('/draggable-marker', 'gmaps.draggable-marker')->name('draggable-marker');
+        Route::view('/geocoding', 'gmaps.geocoding')->name('geocoding');
+        Route::view('/geolocation', 'gmaps.geolocation')->name('geolocation');
+        Route::view('/marker', 'gmaps.marker')->name('marker');
+        Route::view('/multiple-marker', 'gmaps.multiple-marker')->name('multiple-marker');
+        Route::view('/route', 'gmaps.route')->name('route');
+        Route::view('/simple', 'gmaps.simple')->name('simple');
+    });
     // #endregion stisla
 
     // #region pages
