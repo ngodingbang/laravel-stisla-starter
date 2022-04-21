@@ -3,7 +3,7 @@
 @section('title', __('Login'))
 
 @section('pre-style')
-    <link rel="stylesheet" href="{{ mix('node_modules/bootstrap-social/bootstrap-social.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-social/bootstrap-social.css') }}">
 @endsection
 
 @section('content')

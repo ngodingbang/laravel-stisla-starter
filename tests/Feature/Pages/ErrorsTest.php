@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Http\Response;
-
 use function Pest\Laravel\actingAs;
 
 beforeEach(function () {

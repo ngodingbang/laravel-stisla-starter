@@ -3,13 +3,13 @@
 @section('title', __('General Settings'))
 
 @section('pre-style')
-    <link rel="stylesheet" href="{{ mix('node_modules/codemirror/lib/codemirror.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/codemirror/theme/duotone-dark.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/codemirror/lib/codemirror.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/codemirror/theme/duotone-dark.css') }}">
 @endsection
 
 @section('pre-script')
-    <script src="{{ mix('node_modules/codemirror/lib/codemirror.js') }}"></script>
-    <script src="{{ mix('node_modules/codemirror/mode/javascript/javascript.js') }}"></script>
+    <script src="{{ asset('node_modules/codemirror/lib/codemirror.js') }}"></script>
+    <script src="{{ asset('node_modules/codemirror/mode/javascript/javascript.js') }}"></script>
 @endsection
 
 @section('script')

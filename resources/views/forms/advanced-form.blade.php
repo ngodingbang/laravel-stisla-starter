@@ -3,24 +3,24 @@
 @section('title', 'Forms › Advanced Forms')
 
 @section('pre-style')
-    <link rel="stylesheet" href="{{ mix('node_modules/bootstrap-daterangepicker/daterangepicker.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/select2/dist/css/select2.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/selectric/public/selectric.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-daterangepicker/daterangepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/select2/dist/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/selectric/public/selectric.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css') }}">
 @endsection
 
 @section('pre-script')
-    <script src="{{ mix('node_modules/cleave.js/dist/cleave.min.js') }}"></script>
-    <script src="{{ mix('node_modules/cleave.js/dist/addons/cleave-phone.us.js') }}"></script>
-    <script src="{{ mix('node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js') }}"></script>
-    <script src="{{ mix('node_modules/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
-    <script src="{{ mix('node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js') }}"></script>
-    <script src="{{ mix('node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js') }}"></script>
-    <script src="{{ mix('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
-    <script src="{{ mix('node_modules/select2/dist/js/select2.full.min.js') }}"></script>
-    <script src="{{ mix('node_modules/selectric/public/jquery.selectric.min.js') }}"></script>
+    <script src="{{ asset('node_modules/cleave.js/dist/cleave.min.js') }}"></script>
+    <script src="{{ asset('node_modules/cleave.js/dist/addons/cleave-phone.us.js') }}"></script>
+    <script src="{{ asset('node_modules/@aacassandra/jquery.pwstrength/jquery.pwstrength.min.js') }}"></script>
+    <script src="{{ asset('node_modules/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
+    <script src="{{ asset('node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js') }}"></script>
+    <script src="{{ asset('node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js') }}"></script>
+    <script src="{{ asset('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
+    <script src="{{ asset('node_modules/select2/dist/js/select2.full.min.js') }}"></script>
+    <script src="{{ asset('node_modules/selectric/public/jquery.selectric.min.js') }}"></script>
 @endsection
 
 @section('script')

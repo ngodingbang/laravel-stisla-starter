@@ -18,7 +18,7 @@ class SetLayoutConfig
      */
     public function handle(Request $request, Closure $next)
     {
-        if (!$request->routeIs('layout.*')) {
+        if (! $request->routeIs('layout.*')) {
             Config::set('setting.layout', Session::get('layout', AbstractUseLayout::$defaultLayout));
         }
 

@@ -8,9 +8,21 @@
             <h1>@lang('Form Validation')</h1>
 
             <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Forms</a></div>
-                <div class="breadcrumb-item">Form Validation</div>
+                <div class="breadcrumb-item active">
+                    <a href="{{ route('dashboard.ecommerce') }}">
+                        <span>@lang('Dashboard')</span>
+                    </a>
+                </div>
+
+                <div class="breadcrumb-item">
+                    <span>@lang('Forms')</span>
+                </div>
+
+                <div class="breadcrumb-item">
+                    <a href="{{ route('forms.validation') }}">
+                        <span>@lang('Form Validation')</span>
+                    </a>
+                </div>
             </div>
         </div>
 

@@ -3,11 +3,11 @@
 @section('title', 'Bootstrap Components › Modal')
 
 @section('pre-style')
-    <link rel="stylesheet" href="{{ mix('node_modules/prismjs/themes/prism.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/prismjs/themes/prism.css') }}">
 @endsection
 
 @section('pre-script')
-    <script src="{{ mix('node_modules/prismjs/prism.js') }}"></script>
+    <script src="{{ asset('node_modules/prismjs/prism.js') }}"></script>
 @endsection
 
 @section('script')

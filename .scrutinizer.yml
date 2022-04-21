@@ -1,4 +1,8 @@
 build:
+  image: default-bionic
+  environment:
+    php:
+      version: '8.0'
   nodes:
     analysis:
       dependencies:

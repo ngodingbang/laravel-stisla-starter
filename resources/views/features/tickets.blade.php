@@ -3,13 +3,13 @@
 @section('title', __('Tickets'))
 
 @section('pre-style')
-    <link rel="stylesheet" href="{{ mix('node_modules/summernote/dist/summernote-bs4.css') }}">
-    <link rel="stylesheet" href="{{ mix('node_modules/chocolat/dist/css/chocolat.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/summernote/dist/summernote-bs4.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/chocolat/dist/css/chocolat.css') }}">
 @endsection
 
 @section('pre-script')
-    <script src="{{ mix('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
-    <script src="{{ mix('node_modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
+    <script src="{{ asset('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
+    <script src="{{ asset('node_modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
 @endsection
 
 @section('content')

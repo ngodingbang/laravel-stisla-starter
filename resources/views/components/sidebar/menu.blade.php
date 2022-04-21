@@ -191,6 +191,93 @@
         <span>@lang('Stisla')</span>
     </li>
 
+    <li class="nav-item dropdown @if (Route::is('components.*')) active @endif">
+        <a href="#" class="nav-link has-dropdown">
+            <i class="fas fa-th-large"></i> <span>@lang('Components')</span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li @if (Route::is('components.article')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.article') }}">
+                    <span>@lang('Article')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.avatar')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.avatar') }}">
+                    <span>@lang('Avatar')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.chat-box')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.chat-box') }}">
+                    <span>@lang('Chat Box')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.empty-state')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.empty-state') }}">
+                    <span>@lang('Empty State')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.gallery')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.gallery') }}">
+                    <span>@lang('Gallery')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.hero')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.hero') }}">
+                    <span>@lang('Hero')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.multiple-upload')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.multiple-upload') }}">
+                    <span>@lang('Multiple Upload')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.pricing')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.pricing') }}">
+                    <span>@lang('Pricing')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.statistic')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.statistic') }}">
+                    <span>@lang('Statistic')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.tab')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.tab') }}">
+                    <span>@lang('Tab')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.table')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.table') }}">
+                    <span>@lang('Table')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.user')) class="active" @endif>
+                <a class="nav-link" href="{{ route('components.user') }}">
+                    <span>@lang('User')</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('components.wizard')) class="active" @endif>
+                <a class="nav-link beep beep-sidebar" href="{{ route('components.wizard') }}">
+                    <span>@lang('Wizard')</span>
+                </a>
+            </li>
+
+        </ul>
+    </li>
+
     <li class="nav-item dropdown @if (Route::is('forms.*')) active @endif">
         <a href="#" class="nav-link has-dropdown">
             <i class="far fa-file-alt"></i> <span>@lang('Forms')</span>
@@ -212,6 +299,142 @@
             <li @if (Route::is('forms.validation')) class="active" @endif>
                 <a class="nav-link" href="{{ route('forms.validation') }}">
                     <span>@lang('Form Validation')</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="nav-item dropdown @if (Route::is('gmaps.*')) active @endif">
+        <a href="#" class="nav-link has-dropdown">
+            <i class="fas fa-map-marker-alt"></i> <span>Google Maps</span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li @if (Route::is('gmaps.advanced-route')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.advanced-route') }}">
+                    <span>Advanced Route</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.draggable-marker')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.draggable-marker') }}">
+                    <span>Draggable Marker</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.geocoding')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.geocoding') }}">
+                    <span>Geocoding</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.geolocation')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.geolocation') }}">
+                    <span>Geolocation</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.marker')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.marker') }}">
+                    <span>Marker</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.multiple-marker')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.multiple-marker') }}">
+                    <span>Multiple Marker</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.route')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.route') }}">
+                    <span>Route</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('gmaps.simple')) class="active" @endif>
+                <a class="nav-link" href="{{ route('gmaps.simple') }}">
+                    <span>Simple</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="nav-item dropdown @if (Route::is('modules.*')) active @endif">
+        <a href="#" class="nav-link has-dropdown">
+            <i class="fas fa-plug"></i> <span>@lang('Modules')</span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li @if (Route::is('modules.calendar')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.calendar') }}">
+                    <span>Calendar</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.chartjs')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.chartjs') }}">
+                    <span>ChartJS</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.datatables')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.datatables') }}">
+                    <span>DataTables</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.flag')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.flag') }}">
+                    <span>Flag</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.font-awesome')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.font-awesome') }}">
+                    <span>Font Awesome</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.ion-icons')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.ion-icons') }}">
+                    <span>Ion Icons</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.owl-carousel')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.owl-carousel') }}">
+                    <span>Owl Carousel</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.sparkline')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.sparkline') }}">
+                    <span>Sparkline</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.sweet-alert')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.sweet-alert') }}">
+                    <span>Sweet Alert</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.toastr')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.toastr') }}">
+                    <span>Toastr</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.vector-map')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.vector-map') }}">
+                    <span>Vector Map</span>
+                </a>
+            </li>
+
+            <li @if (Route::is('modules.weather-icon')) class="active" @endif>
+                <a class="nav-link" href="{{ route('modules.weather-icon') }}">
+                    <span>Weather Icon</span>
                 </a>
             </li>
         </ul>
