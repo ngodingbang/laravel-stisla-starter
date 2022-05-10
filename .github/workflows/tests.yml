@@ -1,6 +1,6 @@
 # GitHub Action for Laravel with MySQL
 # https://github.com/shivammathur/setup-php/blob/master/examples/laravel-mysql.yml
-name: tests-mysql-5
+name: tests
 
 on: [push, pull_request]
 
@@ -25,7 +25,7 @@ jobs:
       fail-fast: true
       matrix:
         php: ['7.3', '7.4', '8.0', '8.1']
-        stability: [prefer-lowest, prefer-stable]
+        stability: [prefer-stable]
 
     steps:
       - name: Checkout
@@ -37,9 +37,7 @@ jobs:
         with:
           php-version: ${{ matrix.php }}
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, pdo_mysql, gd, redis-phpredis/phpredis@5.3.5, igbinary, msgpack, lzf, zstd, lz4, memcached
-          ini-values: error_reporting=E_ALL
           tools: composer:v2
-          coverage: xdebug
 
       - name: Start mysql service
         run: sudo systemctl start mysql
@@ -77,9 +75,7 @@ jobs:
         run: npm install
 
       - name: Execute tests
-        run: |
-          mkdir -p build/logs
-          vendor/bin/pest --verbose --coverage-clover build/logs/clover.xml
+        run: vendor/bin/pest --verbose
         env:
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
 
@@ -103,7 +99,7 @@ jobs:
       fail-fast: true
       matrix:
         php: ['7.3', '7.4', '8.0', '8.1']
-        stability: [prefer-lowest, prefer-stable]
+        stability: [prefer-stable]
 
     steps:
       - name: Checkout
@@ -115,9 +111,7 @@ jobs:
         with:
           php-version: ${{ matrix.php }}
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, pdo_mysql, gd, redis-phpredis/phpredis@5.3.5, igbinary, msgpack, lzf, zstd, lz4, memcached
-          ini-values: error_reporting=E_ALL
           tools: composer:v2
-          coverage: xdebug
 
       - name: Start mysql service
         run: sudo systemctl start mysql
@@ -155,16 +149,16 @@ jobs:
         run: npm install
 
       - name: Execute tests
-        run: |
-          mkdir -p build/logs
-          vendor/bin/pest --verbose --coverage-clover build/logs/clover.xml
+        run: vendor/bin/pest --verbose
         env:
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
 
-  postgresql:
+  postgresql_upload_coverage:
     name: PHP ${{ matrix.php }} - ${{ matrix.stability }} - PostgreSQL 12.6
 
     runs-on: ubuntu-latest
+
+    needs: [mysql_57, mysql_8]
 
     services:
       postgres:
@@ -181,7 +175,7 @@ jobs:
       fail-fast: true
       matrix:
         php: ['7.3', '7.4', '8.0', '8.1']
-        stability: [prefer-lowest, prefer-stable]
+        stability: [prefer-stable]
 
     steps:
       - name: Checkout
