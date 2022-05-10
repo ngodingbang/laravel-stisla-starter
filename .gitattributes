@@ -11,3 +11,5 @@
 .env.github.postgresql export-ignore
 .scrutinizer.yml export-ignore
 CHANGELOG.md export-ignore
+package-lock.json export-ignore
+Procfile export-ignore

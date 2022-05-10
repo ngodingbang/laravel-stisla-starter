@@ -74,7 +74,7 @@
                                     <ul class="list-unstyled list-unstyled-border">
                                         <li class="media">
                                             <a href="#">
-                                                <img alt="image" class="mr-3 rounded" width="50" src="../assets/img/products/product-4-50.png">
+                                                <img alt="image" class="mr-3 rounded" width="50" src="{{ asset('img/products/product-4-50.png') }}">
                                             </a>
                                             <div class="media-body">
                                                 <div class="media-right">$805</div>
@@ -86,7 +86,7 @@
                                         </li>
                                         <li class="media">
                                             <a href="#">
-                                                <img alt="image" class="mr-3 rounded" width="50" src="../assets/img/products/product-1-50.png">
+                                                <img alt="image" class="mr-3 rounded" width="50" src="{{ asset('img/products/product-1-50.png') }}">
                                             </a>
                                             <div class="media-body">
                                                 <div class="media-right">$405</div>
@@ -98,7 +98,7 @@
                                         </li>
                                         <li class="media">
                                             <a href="#">
-                                                <img alt="image" class="mr-3 rounded" width="50" src="../assets/img/products/product-2-50.png">
+                                                <img alt="image" class="mr-3 rounded" width="50" src="{{ asset('img/products/product-2-50.png') }}">
                                             </a>
                                             <div class="media-body">
                                                 <div class="media-right">$499</div>
@@ -110,7 +110,7 @@
                                         </li>
                                         <li class="media">
                                             <a href="#">
-                                                <img alt="image" class="mr-3 rounded" width="50" src="../assets/img/products/product-3-50.png">
+                                                <img alt="image" class="mr-3 rounded" width="50" src="{{ asset('img/products/product-3-50.png') }}">
                                             </a>
                                             <div class="media-body">
                                                 <div class="media-right">$149</div>
