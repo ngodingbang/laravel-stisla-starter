@@ -149,9 +149,9 @@ Route::middleware('auth', 'verified', SetLayoutConfig::class)->group(function ()
         Route::view('/tickets', 'features.tickets')->name('tickets');
     });
 
-    Route::prefix('/profile')->name('profile.')->controller(ProfileController::class)->group(function () {
-        Route::get('/', 'edit')->name('edit');
-        Route::put('/', 'update')->name('update');
+    Route::prefix('/profile')->name('profile.')->group(function () {
+        Route::get('/', [ProfileController::class, 'edit'])->name('edit');
+        Route::put('/', [ProfileController::class, 'update'])->name('update');
     });
 
     Route::prefix('/utilities')->name('utilities.')->group(function () {
