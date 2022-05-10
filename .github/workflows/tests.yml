@@ -158,8 +158,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    needs: [mysql_57, mysql_8]
-
     services:
       postgres:
         image: postgres:12.6
