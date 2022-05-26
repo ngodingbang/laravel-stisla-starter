@@ -33,6 +33,9 @@
     </main>
 
     {{-- Script --}}
+    <script>
+        const app_locale = @json(\App::getLocale());
+    </script>
     <script src="{{ mix('js/stisla/master.js') }}"></script>
     @yield('pre-script')
     @stack('pre-scripts')
@@ -40,4 +43,5 @@
     <script src="{{ mix('js/stisla/scripts.js') }}"></script>
     @yield('script')
     @stack('scripts')
+    @stack('modal')
 </body>

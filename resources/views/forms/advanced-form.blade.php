@@ -20,6 +20,7 @@
     <script src="{{ asset('node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js') }}"></script>
     <script src="{{ asset('node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
     <script src="{{ asset('node_modules/select2/dist/js/select2.full.min.js') }}"></script>
+    <script src="{{ asset('node_modules/select2/dist/js/i18n/'.\App::getLocale().'.js') }}"></script>
     <script src="{{ asset('node_modules/selectric/public/jquery.selectric.min.js') }}"></script>
 @endsection
 

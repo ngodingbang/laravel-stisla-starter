@@ -339,7 +339,7 @@ $(function() {
 
   // Select2
   if(jQuery().select2) {
-    $(".select2").select2();
+    $(".select2").select2({ language: app_locale });
   }
 
   // Selectric

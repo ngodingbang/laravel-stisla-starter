@@ -1,20 +1,33 @@
 var datatable;
+var datatable_options;
 
-$(function() {
-  datatable = $('.datatable').DataTable({
+$(function () {
+  datatable_options = {
     processing: true,
     serverSide: true,
-    ajax: typeof datatable_ajax !== 'undefined' ? datatable_ajax : {
-      url: datatable_url,
-      type: 'POST',
-      headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-      },
-    },
+    ajax:
+      typeof datatable_ajax !== "undefined"
+        ? datatable_ajax
+        : {
+            url: datatable_ajax_url,
+            type: "POST",
+          },
     columns: datatable_columns,
-    order: typeof datatable_order !== 'undefined' ? datatable_order : [],
-    language: typeof datatable_language_url !== 'undefined' ? {
+  };
+
+  if (typeof datatable_order !== "undefined") {
+    datatable_options.order = datatable_order;
+  }
+
+  if (typeof datatable_length_menu !== "undefined") {
+    datatable_options.lengthMenu = datatable_length_menu;
+  }
+
+  if (typeof datatable_language_url !== "undefined") {
+    datatable_options.language = {
       url: datatable_language_url,
-    } : {},
-  });
+    };
+  }
+
+  datatable = $(".datatable").DataTable(datatable_options);
 });
